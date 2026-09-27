@@ -1,4 +1,4 @@
-const CACHE='oddball-v154';
+const CACHE='oddball-v155';
 const ASSETS=['./','./index.html','./style.css','./cards.js','./app.js','./court_texture.jpg','./manifest.webmanifest'];
 
 self.addEventListener('install',event=>{
@@ -22,3 +22,5 @@ self.addEventListener('fetch',event=>{
   }
   event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request)));
 });
+
+self.addEventListener('message',event=>{if(event.data&&event.data.type==='SKIP_WAITING')self.skipWaiting();});
