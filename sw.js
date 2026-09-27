@@ -1,4 +1,4 @@
-const CACHE='oddball-v155';
+const CACHE='oddball-v1551';
 const ASSETS=['./','./index.html','./style.css','./cards.js','./app.js','./court_texture.jpg','./manifest.webmanifest'];
 
 self.addEventListener('install',event=>{
