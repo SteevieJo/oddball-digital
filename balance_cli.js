@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),{runBalanceLab}=require('./sim_engine');
+const n=Math.max(100,Math.min(100000,parseInt(process.argv[2]||'5000',10)||5000));
+const seed=parseInt(process.argv[3]||'139',10)||139;
+const out=process.argv[4]||`oddball_balance_${n}_per_card.json`;
+const t=Date.now(),r=runBalanceLab(n,seed);
+fs.writeFileSync(out,JSON.stringify(r,null,2));
+console.log(`Oddball v1.39 Balance Lab — ${r.totalGames} simulations en ${((Date.now()-t)/1000).toFixed(2)} s`);
+console.log(`Export: ${out}`);
+console.table([...r.cards].sort((a,b)=>b.nonDrawWinRate-a.nonDrawWinRate).map(x=>({card:x.name,winRate:(100*x.nonDrawWinRate).toFixed(2)+'%',playRate:(100*x.playRate).toFixed(1)+'%'})));

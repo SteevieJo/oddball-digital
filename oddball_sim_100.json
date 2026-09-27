@@ -1,0 +1,8621 @@
+{
+  "schema": "oddball-sim-v2",
+  "version": "1.39",
+  "engine": "headless-ai-vs-ai",
+  "options": {},
+  "games": 100,
+  "seed": 123,
+  "summary": {
+    "hWins": 45,
+    "aWins": 52,
+    "draws": 3,
+    "avgFaceoffs": 6.07,
+    "avgScoreH": 7.85,
+    "avgScoreA": 8.44
+  },
+  "cards": [
+    {
+      "id": 0,
+      "name": "Katsuki Howard",
+      "starts": 26,
+      "wins": 14,
+      "played": 27,
+      "winzone": 24,
+      "losezone": 2,
+      "winRate": 0.5384615384615384
+    },
+    {
+      "id": 1,
+      "name": "Lydia Le",
+      "starts": 21,
+      "wins": 13,
+      "played": 20,
+      "winzone": 10,
+      "losezone": 10,
+      "winRate": 0.6190476190476191
+    },
+    {
+      "id": 2,
+      "name": "King Choi",
+      "starts": 17,
+      "wins": 7,
+      "played": 17,
+      "winzone": 8,
+      "losezone": 9,
+      "winRate": 0.4117647058823529
+    },
+    {
+      "id": 3,
+      "name": "Candy Choi",
+      "starts": 9,
+      "wins": 4,
+      "played": 10,
+      "winzone": 6,
+      "losezone": 4,
+      "winRate": 0.4444444444444444
+    },
+    {
+      "id": 4,
+      "name": "Nolan Roth",
+      "starts": 14,
+      "wins": 8,
+      "played": 13,
+      "winzone": 10,
+      "losezone": 3,
+      "winRate": 0.5714285714285714
+    },
+    {
+      "id": 5,
+      "name": "Duncan Orr",
+      "starts": 16,
+      "wins": 7,
+      "played": 17,
+      "winzone": 15,
+      "losezone": 2,
+      "winRate": 0.4375
+    },
+    {
+      "id": 6,
+      "name": "Evie Page",
+      "starts": 0,
+      "wins": 0,
+      "played": 0,
+      "winzone": 0,
+      "losezone": 0,
+      "winRate": null
+    },
+    {
+      "id": 7,
+      "name": "Asta Farley",
+      "starts": 17,
+      "wins": 9,
+      "played": 16,
+      "winzone": 3,
+      "losezone": 9,
+      "winRate": 0.5294117647058824
+    },
+    {
+      "id": 8,
+      "name": "Willie Duke",
+      "starts": 16,
+      "wins": 7,
+      "played": 17,
+      "winzone": 11,
+      "losezone": 6,
+      "winRate": 0.4375
+    },
+    {
+      "id": 9,
+      "name": "Rafael Wagner",
+      "starts": 19,
+      "wins": 10,
+      "played": 19,
+      "winzone": 12,
+      "losezone": 7,
+      "winRate": 0.5263157894736842
+    },
+    {
+      "id": 10,
+      "name": "Jada Whitehead",
+      "starts": 7,
+      "wins": 3,
+      "played": 7,
+      "winzone": 7,
+      "losezone": 1,
+      "winRate": 0.42857142857142855
+    },
+    {
+      "id": 11,
+      "name": "Yyla O'Donnell",
+      "starts": 7,
+      "wins": 3,
+      "played": 8,
+      "winzone": 5,
+      "losezone": 3,
+      "winRate": 0.42857142857142855
+    },
+    {
+      "id": 12,
+      "name": "Susie Shaw",
+      "starts": 15,
+      "wins": 8,
+      "played": 16,
+      "winzone": 1,
+      "losezone": 15,
+      "winRate": 0.5333333333333333
+    },
+    {
+      "id": 13,
+      "name": "Cora Mejia",
+      "starts": 13,
+      "wins": 3,
+      "played": 12,
+      "winzone": 3,
+      "losezone": 9,
+      "winRate": 0.23076923076923078
+    },
+    {
+      "id": 14,
+      "name": "Debra Owens",
+      "starts": 10,
+      "wins": 7,
+      "played": 9,
+      "winzone": 6,
+      "losezone": 3,
+      "winRate": 0.7
+    },
+    {
+      "id": 15,
+      "name": "Demi Boone",
+      "starts": 16,
+      "wins": 5,
+      "played": 16,
+      "winzone": 6,
+      "losezone": 10,
+      "winRate": 0.3125
+    },
+    {
+      "id": 16,
+      "name": "Divya Lynn",
+      "starts": 22,
+      "wins": 7,
+      "played": 22,
+      "winzone": 8,
+      "losezone": 14,
+      "winRate": 0.3181818181818182
+    },
+    {
+      "id": 17,
+      "name": "Davari Rich",
+      "starts": 16,
+      "wins": 8,
+      "played": 16,
+      "winzone": 2,
+      "losezone": 14,
+      "winRate": 0.5
+    },
+    {
+      "id": 18,
+      "name": "Devin Price",
+      "starts": 9,
+      "wins": 3,
+      "played": 11,
+      "winzone": 5,
+      "losezone": 6,
+      "winRate": 0.3333333333333333
+    },
+    {
+      "id": 19,
+      "name": "Edgar Smith",
+      "starts": 17,
+      "wins": 7,
+      "played": 15,
+      "winzone": 7,
+      "losezone": 8,
+      "winRate": 0.4117647058823529
+    },
+    {
+      "id": 20,
+      "name": "Darcy Davis",
+      "starts": 2,
+      "wins": 0,
+      "played": 5,
+      "winzone": 2,
+      "losezone": 3,
+      "winRate": 0
+    },
+    {
+      "id": 21,
+      "name": "Kay Lee",
+      "starts": 5,
+      "wins": 2,
+      "played": 6,
+      "winzone": 3,
+      "losezone": 3,
+      "winRate": 0.4
+    },
+    {
+      "id": 22,
+      "name": "Ramona Cox",
+      "starts": 8,
+      "wins": 5,
+      "played": 6,
+      "winzone": 2,
+      "losezone": 4,
+      "winRate": 0.625
+    },
+    {
+      "id": 23,
+      "name": "Nino West",
+      "starts": 0,
+      "wins": 0,
+      "played": 1,
+      "winzone": 0,
+      "losezone": 1,
+      "winRate": null
+    },
+    {
+      "id": 24,
+      "name": "Jason Shea",
+      "starts": 14,
+      "wins": 10,
+      "played": 14,
+      "winzone": 11,
+      "losezone": 3,
+      "winRate": 0.7142857142857143
+    },
+    {
+      "id": 25,
+      "name": "Reed Crane",
+      "starts": 16,
+      "wins": 8,
+      "played": 17,
+      "winzone": 14,
+      "losezone": 3,
+      "winRate": 0.5
+    },
+    {
+      "id": 26,
+      "name": "Leon Stuart",
+      "starts": 4,
+      "wins": 3,
+      "played": 5,
+      "winzone": 4,
+      "losezone": 1,
+      "winRate": 0.75
+    },
+    {
+      "id": 27,
+      "name": "Seth Kelly",
+      "starts": 19,
+      "wins": 6,
+      "played": 18,
+      "winzone": 4,
+      "losezone": 14,
+      "winRate": 0.3157894736842105
+    },
+    {
+      "id": 28,
+      "name": "Cash Lester",
+      "starts": 21,
+      "wins": 12,
+      "played": 22,
+      "winzone": 15,
+      "losezone": 6,
+      "winRate": 0.5714285714285714
+    },
+    {
+      "id": 29,
+      "name": "Aditi Russo",
+      "starts": 15,
+      "wins": 10,
+      "played": 14,
+      "winzone": 8,
+      "losezone": 6,
+      "winRate": 0.6666666666666666
+    },
+    {
+      "id": 30,
+      "name": "Abel Snyder",
+      "starts": 15,
+      "wins": 4,
+      "played": 17,
+      "winzone": 10,
+      "losezone": 7,
+      "winRate": 0.26666666666666666
+    },
+    {
+      "id": 31,
+      "name": "Asuka Reed",
+      "starts": 19,
+      "wins": 10,
+      "played": 16,
+      "winzone": 4,
+      "losezone": 12,
+      "winRate": 0.5263157894736842
+    },
+    {
+      "id": 32,
+      "name": "Air Irwin",
+      "starts": 8,
+      "wins": 3,
+      "played": 8,
+      "winzone": 6,
+      "losezone": 2,
+      "winRate": 0.375
+    },
+    {
+      "id": 33,
+      "name": "Nao Duffy",
+      "starts": 2,
+      "wins": 0,
+      "played": 2,
+      "winzone": 0,
+      "losezone": 2,
+      "winRate": 0
+    },
+    {
+      "id": 34,
+      "name": "Nao Clark",
+      "starts": 15,
+      "wins": 8,
+      "played": 17,
+      "winzone": 8,
+      "losezone": 9,
+      "winRate": 0.5333333333333333
+    },
+    {
+      "id": 35,
+      "name": "Cheryl Hamilton",
+      "starts": 12,
+      "wins": 7,
+      "played": 12,
+      "winzone": 6,
+      "losezone": 6,
+      "winRate": 0.5833333333333334
+    },
+    {
+      "id": 36,
+      "name": "Kanako Avila",
+      "starts": 12,
+      "wins": 7,
+      "played": 12,
+      "winzone": 0,
+      "losezone": 12,
+      "winRate": 0.5833333333333334
+    },
+    {
+      "id": 37,
+      "name": "Aubrey Mercado",
+      "starts": 18,
+      "wins": 6,
+      "played": 20,
+      "winzone": 11,
+      "losezone": 9,
+      "winRate": 0.3333333333333333
+    },
+    {
+      "id": 38,
+      "name": "Sadie Moon",
+      "starts": 9,
+      "wins": 4,
+      "played": 9,
+      "winzone": 5,
+      "losezone": 4,
+      "winRate": 0.4444444444444444
+    },
+    {
+      "id": 39,
+      "name": "Takaya Herrera",
+      "starts": 15,
+      "wins": 6,
+      "played": 16,
+      "winzone": 5,
+      "losezone": 11,
+      "winRate": 0.4
+    },
+    {
+      "id": 40,
+      "name": "Derrick Doyle",
+      "starts": 4,
+      "wins": 4,
+      "played": 5,
+      "winzone": 4,
+      "losezone": 1,
+      "winRate": 1
+    },
+    {
+      "id": 41,
+      "name": "Giulia Pearson",
+      "starts": 1,
+      "wins": 1,
+      "played": 1,
+      "winzone": 1,
+      "losezone": 0,
+      "winRate": 1
+    },
+    {
+      "id": 42,
+      "name": "Alonzo Fry",
+      "starts": 16,
+      "wins": 5,
+      "played": 18,
+      "winzone": 8,
+      "losezone": 10,
+      "winRate": 0.3125
+    },
+    {
+      "id": 43,
+      "name": "Ira Hunt",
+      "starts": 20,
+      "wins": 8,
+      "played": 19,
+      "winzone": 3,
+      "losezone": 16,
+      "winRate": 0.4
+    },
+    {
+      "id": 44,
+      "name": "Hattie Archer",
+      "starts": 12,
+      "wins": 6,
+      "played": 12,
+      "winzone": 6,
+      "losezone": 6,
+      "winRate": 0.5
+    },
+    {
+      "id": 45,
+      "name": "Gloria Mayer",
+      "starts": 16,
+      "wins": 9,
+      "played": 17,
+      "winzone": 5,
+      "losezone": 12,
+      "winRate": 0.5625
+    },
+    {
+      "id": 46,
+      "name": "Wally Sanford",
+      "starts": 5,
+      "wins": 4,
+      "played": 5,
+      "winzone": 3,
+      "losezone": 3,
+      "winRate": 0.8
+    },
+    {
+      "id": 47,
+      "name": "Hina Massey",
+      "starts": 3,
+      "wins": 1,
+      "played": 3,
+      "winzone": 0,
+      "losezone": 3,
+      "winRate": 0.3333333333333333
+    },
+    {
+      "id": 48,
+      "name": "Kasimir Anthony",
+      "starts": 0,
+      "wins": 0,
+      "played": 0,
+      "winzone": 0,
+      "losezone": 0,
+      "winRate": null
+    },
+    {
+      "id": 49,
+      "name": "Phil Harding",
+      "starts": 8,
+      "wins": 5,
+      "played": 9,
+      "winzone": 4,
+      "losezone": 5,
+      "winRate": 0.625
+    },
+    {
+      "id": 50,
+      "name": "Reuben Browning",
+      "starts": 6,
+      "wins": 6,
+      "played": 6,
+      "winzone": 3,
+      "losezone": 3,
+      "winRate": 1
+    },
+    {
+      "id": 51,
+      "name": "Skekhar Barnes",
+      "starts": 21,
+      "wins": 14,
+      "played": 21,
+      "winzone": 17,
+      "losezone": 3,
+      "winRate": 0.6666666666666666
+    },
+    {
+      "id": 52,
+      "name": "Zakai Bell",
+      "starts": 12,
+      "wins": 6,
+      "played": 12,
+      "winzone": 8,
+      "losezone": 4,
+      "winRate": 0.5
+    },
+    {
+      "id": 53,
+      "name": "Milo Vega",
+      "starts": 15,
+      "wins": 8,
+      "played": 16,
+      "winzone": 5,
+      "losezone": 11,
+      "winRate": 0.5333333333333333
+    },
+    {
+      "id": 54,
+      "name": "Nadia Brooks",
+      "starts": 13,
+      "wins": 7,
+      "played": 15,
+      "winzone": 7,
+      "losezone": 8,
+      "winRate": 0.5384615384615384
+    },
+    {
+      "id": 55,
+      "name": "Sora Medina",
+      "starts": 16,
+      "wins": 7,
+      "played": 14,
+      "winzone": 5,
+      "losezone": 9,
+      "winRate": 0.4375
+    },
+    {
+      "id": 56,
+      "name": "Eli Navarro",
+      "starts": 19,
+      "wins": 4,
+      "played": 18,
+      "winzone": 7,
+      "losezone": 11,
+      "winRate": 0.21052631578947367
+    },
+    {
+      "id": 57,
+      "name": "Mina Park",
+      "starts": 14,
+      "wins": 4,
+      "played": 15,
+      "winzone": 7,
+      "losezone": 8,
+      "winRate": 0.2857142857142857
+    },
+    {
+      "id": 58,
+      "name": "Otis Webb",
+      "starts": 16,
+      "wins": 8,
+      "played": 18,
+      "winzone": 11,
+      "losezone": 7,
+      "winRate": 0.5
+    },
+    {
+      "id": 59,
+      "name": "Zuri Dean",
+      "starts": 5,
+      "wins": 2,
+      "played": 5,
+      "winzone": 0,
+      "losezone": 5,
+      "winRate": 0.4
+    },
+    {
+      "id": 60,
+      "name": "Pablo Knox",
+      "starts": 21,
+      "wins": 10,
+      "played": 22,
+      "winzone": 16,
+      "losezone": 6,
+      "winRate": 0.47619047619047616
+    },
+    {
+      "id": 61,
+      "name": "Rina Foster",
+      "starts": 7,
+      "wins": 4,
+      "played": 6,
+      "winzone": 1,
+      "losezone": 5,
+      "winRate": 0.5714285714285714
+    },
+    {
+      "id": 62,
+      "name": "Noah Kim",
+      "starts": 11,
+      "wins": 4,
+      "played": 11,
+      "winzone": 9,
+      "losezone": 2,
+      "winRate": 0.36363636363636365
+    },
+    {
+      "id": 63,
+      "name": "Maya Russo",
+      "starts": 14,
+      "wins": 5,
+      "played": 14,
+      "winzone": 3,
+      "losezone": 11,
+      "winRate": 0.35714285714285715
+    },
+    {
+      "id": 64,
+      "name": "Jiro Coleman",
+      "starts": 13,
+      "wins": 9,
+      "played": 13,
+      "winzone": 5,
+      "losezone": 8,
+      "winRate": 0.6923076923076923
+    },
+    {
+      "id": 65,
+      "name": "Lena Wolfe",
+      "starts": 18,
+      "wins": 5,
+      "played": 17,
+      "winzone": 4,
+      "losezone": 13,
+      "winRate": 0.2777777777777778
+    },
+    {
+      "id": 66,
+      "name": "Tariq Moss",
+      "starts": 5,
+      "wins": 2,
+      "played": 7,
+      "winzone": 6,
+      "losezone": 1,
+      "winRate": 0.4
+    },
+    {
+      "id": 67,
+      "name": "Ivy Santos",
+      "starts": 8,
+      "wins": 5,
+      "played": 7,
+      "winzone": 1,
+      "losezone": 6,
+      "winRate": 0.625
+    },
+    {
+      "id": 68,
+      "name": "Kira Banks",
+      "starts": 12,
+      "wins": 4,
+      "played": 10,
+      "winzone": 8,
+      "losezone": 2,
+      "winRate": 0.3333333333333333
+    },
+    {
+      "id": 69,
+      "name": "Marco Lin",
+      "starts": 21,
+      "wins": 13,
+      "played": 21,
+      "winzone": 15,
+      "losezone": 6,
+      "winRate": 0.6190476190476191
+    },
+    {
+      "id": 70,
+      "name": "Yumi Hayes",
+      "starts": 12,
+      "wins": 9,
+      "played": 13,
+      "winzone": 6,
+      "losezone": 7,
+      "winRate": 0.75
+    },
+    {
+      "id": 71,
+      "name": "Felix Grant",
+      "starts": 14,
+      "wins": 5,
+      "played": 12,
+      "winzone": 2,
+      "losezone": 10,
+      "winRate": 0.35714285714285715
+    },
+    {
+      "id": 72,
+      "name": "Amara Stone",
+      "starts": 1,
+      "wins": 0,
+      "played": 2,
+      "winzone": 0,
+      "losezone": 2,
+      "winRate": 0
+    },
+    {
+      "id": 73,
+      "name": "Keon Wallace",
+      "starts": 16,
+      "wins": 10,
+      "played": 16,
+      "winzone": 5,
+      "losezone": 11,
+      "winRate": 0.625
+    },
+    {
+      "id": 74,
+      "name": "Nia Lambert",
+      "starts": 2,
+      "wins": 1,
+      "played": 5,
+      "winzone": 2,
+      "losezone": 3,
+      "winRate": 0.5
+    },
+    {
+      "id": 75,
+      "name": "Theo Quinn",
+      "starts": 24,
+      "wins": 9,
+      "played": 24,
+      "winzone": 15,
+      "losezone": 9,
+      "winRate": 0.375
+    },
+    {
+      "id": 76,
+      "name": "Aya Romero",
+      "starts": 17,
+      "wins": 6,
+      "played": 15,
+      "winzone": 4,
+      "losezone": 11,
+      "winRate": 0.35294117647058826
+    },
+    {
+      "id": 77,
+      "name": "Dante Wu",
+      "starts": 14,
+      "wins": 8,
+      "played": 16,
+      "winzone": 8,
+      "losezone": 8,
+      "winRate": 0.5714285714285714
+    },
+    {
+      "id": 78,
+      "name": "Mei Carter",
+      "starts": 0,
+      "wins": 0,
+      "played": 0,
+      "winzone": 0,
+      "losezone": 0,
+      "winRate": null
+    },
+    {
+      "id": 79,
+      "name": "Jonah Silva",
+      "starts": 10,
+      "wins": 3,
+      "played": 11,
+      "winzone": 6,
+      "losezone": 5,
+      "winRate": 0.3
+    },
+    {
+      "id": 80,
+      "name": "Ruby Bennett",
+      "starts": 12,
+      "wins": 8,
+      "played": 12,
+      "winzone": 5,
+      "losezone": 7,
+      "winRate": 0.6666666666666666
+    },
+    {
+      "id": 81,
+      "name": "Caleb Young",
+      "starts": 17,
+      "wins": 9,
+      "played": 17,
+      "winzone": 7,
+      "losezone": 10,
+      "winRate": 0.5294117647058824
+    },
+    {
+      "id": 82,
+      "name": "Hana Ortiz",
+      "starts": 17,
+      "wins": 8,
+      "played": 19,
+      "winzone": 8,
+      "losezone": 11,
+      "winRate": 0.47058823529411764
+    },
+    {
+      "id": 83,
+      "name": "Enzo Martin",
+      "starts": 7,
+      "wins": 3,
+      "played": 8,
+      "winzone": 4,
+      "losezone": 4,
+      "winRate": 0.42857142857142855
+    },
+    {
+      "id": 84,
+      "name": "Priya Dawson",
+      "starts": 13,
+      "wins": 5,
+      "played": 12,
+      "winzone": 4,
+      "losezone": 8,
+      "winRate": 0.38461538461538464
+    },
+    {
+      "id": 85,
+      "name": "Malik Flores",
+      "starts": 18,
+      "wins": 4,
+      "played": 15,
+      "winzone": 2,
+      "losezone": 13,
+      "winRate": 0.2222222222222222
+    },
+    {
+      "id": 86,
+      "name": "Lexi Monroe",
+      "starts": 10,
+      "wins": 5,
+      "played": 11,
+      "winzone": 7,
+      "losezone": 4,
+      "winRate": 0.5
+    },
+    {
+      "id": 87,
+      "name": "Ren Ito",
+      "starts": 10,
+      "wins": 6,
+      "played": 9,
+      "winzone": 4,
+      "losezone": 5,
+      "winRate": 0.6
+    },
+    {
+      "id": 88,
+      "name": "Samir Cole",
+      "starts": 8,
+      "wins": 3,
+      "played": 10,
+      "winzone": 9,
+      "losezone": 1,
+      "winRate": 0.375
+    },
+    {
+      "id": 89,
+      "name": "Tessa Morgan",
+      "starts": 8,
+      "wins": 5,
+      "played": 8,
+      "winzone": 3,
+      "losezone": 5,
+      "winRate": 0.625
+    },
+    {
+      "id": 90,
+      "name": "Akira Bell",
+      "starts": 11,
+      "wins": 2,
+      "played": 11,
+      "winzone": 5,
+      "losezone": 6,
+      "winRate": 0.18181818181818182
+    },
+    {
+      "id": 91,
+      "name": "Dalia Reed",
+      "starts": 15,
+      "wins": 7,
+      "played": 15,
+      "winzone": 9,
+      "losezone": 6,
+      "winRate": 0.4666666666666667
+    },
+    {
+      "id": 92,
+      "name": "Victor Hale",
+      "starts": 6,
+      "wins": 4,
+      "played": 5,
+      "winzone": 6,
+      "losezone": 0,
+      "winRate": 0.6666666666666666
+    },
+    {
+      "id": 93,
+      "name": "Bea Collins",
+      "starts": 8,
+      "wins": 4,
+      "played": 8,
+      "winzone": 2,
+      "losezone": 6,
+      "winRate": 0.5
+    },
+    {
+      "id": 94,
+      "name": "Omar Price",
+      "starts": 19,
+      "wins": 11,
+      "played": 18,
+      "winzone": 10,
+      "losezone": 8,
+      "winRate": 0.5789473684210527
+    },
+    {
+      "id": 95,
+      "name": "June Holloway",
+      "starts": 14,
+      "wins": 10,
+      "played": 14,
+      "winzone": 2,
+      "losezone": 12,
+      "winRate": 0.7142857142857143
+    },
+    {
+      "id": 96,
+      "name": "Mika Torres",
+      "starts": 8,
+      "wins": 5,
+      "played": 9,
+      "winzone": 3,
+      "losezone": 6,
+      "winRate": 0.625
+    },
+    {
+      "id": 97,
+      "name": "Ravi Ellis",
+      "starts": 21,
+      "wins": 18,
+      "played": 21,
+      "winzone": 10,
+      "losezone": 11,
+      "winRate": 0.8571428571428571
+    }
+  ],
+  "raw": [
+    {
+      "seed": 123,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 10
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          31,
+          73,
+          37,
+          65,
+          9,
+          68
+        ],
+        "a": [
+          28,
+          50,
+          26,
+          81,
+          16,
+          39
+        ]
+      },
+      "played": {
+        "h": [
+          68,
+          9,
+          65,
+          73,
+          37,
+          31
+        ],
+        "a": [
+          39,
+          28,
+          81,
+          50,
+          16,
+          26
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            68,
+            9,
+            73
+          ],
+          "lose": [
+            65,
+            37,
+            31
+          ]
+        },
+        "a": {
+          "win": [
+            50,
+            16,
+            26
+          ],
+          "lose": [
+            39,
+            28,
+            81
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2654435884,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 14
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          16,
+          55,
+          77,
+          7,
+          32,
+          80
+        ],
+        "a": [
+          83,
+          87,
+          35,
+          94,
+          69,
+          17
+        ]
+      },
+      "played": {
+        "h": [
+          77,
+          16,
+          32,
+          80,
+          70,
+          7
+        ],
+        "a": [
+          69,
+          83,
+          87,
+          17,
+          94,
+          35
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            16,
+            32
+          ],
+          "lose": [
+            77,
+            70,
+            80,
+            7
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            94,
+            35
+          ],
+          "lose": [
+            83,
+            87,
+            17
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 1
+      }
+    },
+    {
+      "seed": 1013904349,
+      "winner": "draw",
+      "score": {
+        "h": 7,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          17,
+          65,
+          13,
+          0,
+          16,
+          85
+        ],
+        "a": [
+          28,
+          31,
+          64,
+          5,
+          35,
+          32
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          17,
+          65,
+          16,
+          13,
+          79,
+          85
+        ],
+        "a": [
+          64,
+          28,
+          5,
+          32,
+          42,
+          20,
+          57
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            79
+          ],
+          "lose": [
+            17,
+            65,
+            16,
+            13,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            5,
+            32,
+            42,
+            57
+          ],
+          "lose": [
+            64,
+            20
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3668340110,
+      "winner": "a",
+      "score": {
+        "h": 2,
+        "a": 10
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          54,
+          66,
+          34,
+          64,
+          59
+        ],
+        "a": [
+          71,
+          84,
+          35,
+          28,
+          29,
+          85
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          34,
+          54,
+          66,
+          64,
+          59
+        ],
+        "a": [
+          29,
+          28,
+          84,
+          20,
+          35,
+          71
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [],
+          "lose": [
+            34,
+            54,
+            66,
+            64,
+            0,
+            59
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            35,
+            71
+          ],
+          "lose": [
+            29,
+            84,
+            20
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2027808575,
+      "winner": "h",
+      "score": {
+        "h": 12,
+        "a": 11
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          97,
+          4,
+          22,
+          69,
+          36,
+          31
+        ],
+        "a": [
+          16,
+          27,
+          15,
+          1,
+          60,
+          10
+        ]
+      },
+      "played": {
+        "h": [
+          4,
+          97,
+          69,
+          36,
+          22,
+          31
+        ],
+        "a": [
+          16,
+          60,
+          10,
+          1,
+          15,
+          27
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            4,
+            69,
+            22,
+            31
+          ],
+          "lose": [
+            97,
+            36
+          ]
+        },
+        "a": {
+          "win": [
+            60,
+            1
+          ],
+          "lose": [
+            16,
+            10,
+            15,
+            27
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 3
+      }
+    },
+    {
+      "seed": 387277040,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 2
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          69,
+          53,
+          97,
+          91,
+          68
+        ],
+        "a": [
+          7,
+          30,
+          3,
+          62,
+          42,
+          4
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          68,
+          97,
+          91,
+          69,
+          53
+        ],
+        "a": [
+          42,
+          3,
+          4,
+          7,
+          30,
+          62
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            68,
+            91,
+            69
+          ],
+          "lose": [
+            97,
+            53
+          ]
+        },
+        "a": {
+          "win": [
+            4,
+            62
+          ],
+          "lose": [
+            42,
+            3,
+            7,
+            30
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3041712801,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          19,
+          81,
+          90,
+          58,
+          7,
+          55
+        ],
+        "a": [
+          62,
+          73,
+          15,
+          97,
+          39,
+          77
+        ]
+      },
+      "played": {
+        "h": [
+          81,
+          58,
+          7,
+          90,
+          55,
+          19
+        ],
+        "a": [
+          62,
+          73,
+          97,
+          77,
+          39,
+          15
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            58,
+            19
+          ],
+          "lose": [
+            81,
+            7,
+            90,
+            55
+          ]
+        },
+        "a": {
+          "win": [
+            62,
+            97,
+            77,
+            39
+          ],
+          "lose": [
+            73,
+            15
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1401181266,
+      "winner": "a",
+      "score": {
+        "h": 3,
+        "a": 9
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          54,
+          18,
+          58,
+          38,
+          35
+        ],
+        "a": [
+          60,
+          52,
+          89,
+          34,
+          9,
+          10
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          58,
+          54,
+          38,
+          18,
+          35
+        ],
+        "a": [
+          89,
+          9,
+          60,
+          10,
+          34,
+          52
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0
+          ],
+          "lose": [
+            58,
+            54,
+            38,
+            18,
+            35
+          ]
+        },
+        "a": {
+          "win": [
+            9,
+            60,
+            10,
+            52
+          ],
+          "lose": [
+            89,
+            34
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 5
+      }
+    },
+    {
+      "seed": 4055617027,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 7
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          44,
+          36,
+          18,
+          34,
+          84,
+          12
+        ],
+        "a": [
+          27,
+          58,
+          25,
+          0,
+          68,
+          19
+        ]
+      },
+      "played": {
+        "h": [
+          34,
+          44,
+          36,
+          18,
+          84,
+          12
+        ],
+        "a": [
+          27,
+          0,
+          25,
+          57,
+          58,
+          19
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            34,
+            44,
+            84
+          ],
+          "lose": [
+            36,
+            18,
+            12
+          ]
+        },
+        "a": {
+          "win": [
+            25,
+            57,
+            19
+          ],
+          "lose": [
+            27,
+            0,
+            58
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2415085492,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 9
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          29,
+          16,
+          1,
+          60,
+          31
+        ],
+        "a": [
+          43,
+          25,
+          54,
+          94,
+          70,
+          10
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          29,
+          16,
+          60,
+          31,
+          1
+        ],
+        "a": [
+          54,
+          25,
+          69,
+          70,
+          94,
+          10
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            60
+          ],
+          "lose": [
+            29,
+            16,
+            31,
+            1
+          ]
+        },
+        "a": {
+          "win": [
+            25,
+            94,
+            10
+          ],
+          "lose": [
+            54,
+            69,
+            70
+          ]
+        }
+      },
+      "endGame": {
+        "h": 6,
+        "a": 3
+      }
+    },
+    {
+      "seed": 774553957,
+      "winner": "a",
+      "score": {
+        "h": 1,
+        "a": 15
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          94,
+          80,
+          18,
+          0,
+          83,
+          30
+        ],
+        "a": [
+          76,
+          81,
+          13,
+          42,
+          1,
+          87
+        ]
+      },
+      "played": {
+        "h": [
+          18,
+          94,
+          0,
+          30,
+          80,
+          83
+        ],
+        "a": [
+          42,
+          81,
+          13,
+          87,
+          1,
+          74
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0
+          ],
+          "lose": [
+            18,
+            94,
+            30,
+            80,
+            83
+          ]
+        },
+        "a": {
+          "win": [
+            42,
+            81,
+            87,
+            1,
+            74
+          ],
+          "lose": [
+            13
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 3428989718,
+      "winner": "h",
+      "score": {
+        "h": 13,
+        "a": 3
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          81,
+          95,
+          54,
+          1,
+          0,
+          82
+        ],
+        "a": [
+          5,
+          57,
+          60,
+          42,
+          90,
+          19
+        ]
+      },
+      "played": {
+        "h": [
+          81,
+          82,
+          0,
+          54,
+          1,
+          95
+        ],
+        "a": [
+          5,
+          42,
+          57,
+          60,
+          90,
+          19
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            1,
+            95
+          ],
+          "lose": [
+            81,
+            82,
+            54
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            42,
+            60
+          ],
+          "lose": [
+            57,
+            90,
+            19
+          ]
+        }
+      },
+      "endGame": {
+        "h": 3,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1788458183,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          94,
+          24,
+          69,
+          44,
+          86
+        ],
+        "a": [
+          27,
+          29,
+          45,
+          42,
+          16,
+          93
+        ]
+      },
+      "played": {
+        "h": [
+          44,
+          0,
+          86,
+          24,
+          94,
+          69
+        ],
+        "a": [
+          42,
+          29,
+          16,
+          93,
+          27,
+          45
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            24,
+            94
+          ],
+          "lose": [
+            44,
+            86,
+            69
+          ]
+        },
+        "a": {
+          "win": [
+            42,
+            45
+          ],
+          "lose": [
+            29,
+            16,
+            93,
+            27
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 147926648,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 17
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          8,
+          16,
+          90,
+          60,
+          58,
+          3
+        ],
+        "a": [
+          51,
+          1,
+          31,
+          5,
+          2,
+          53
+        ]
+      },
+      "played": {
+        "h": [
+          90,
+          60,
+          16,
+          8,
+          3,
+          58
+        ],
+        "a": [
+          5,
+          51,
+          53,
+          31,
+          1,
+          2
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            8,
+            58
+          ],
+          "lose": [
+            90,
+            60,
+            16,
+            3
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            51,
+            53,
+            1
+          ],
+          "lose": [
+            31,
+            2
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 4
+      }
+    },
+    {
+      "seed": 2802362409,
+      "winner": "h",
+      "score": {
+        "h": 8,
+        "a": 4
+      },
+      "ball": "h",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          62,
+          9,
+          2,
+          71,
+          22,
+          41
+        ],
+        "a": [
+          43,
+          55,
+          11,
+          94,
+          13,
+          72
+        ]
+      },
+      "played": {
+        "h": [
+          9,
+          62,
+          2,
+          41,
+          88,
+          22,
+          86
+        ],
+        "a": [
+          11,
+          94,
+          43,
+          13,
+          37,
+          55,
+          72
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            9,
+            62,
+            2,
+            41,
+            88,
+            86
+          ],
+          "lose": [
+            22
+          ]
+        },
+        "a": {
+          "win": [
+            55
+          ],
+          "lose": [
+            11,
+            94,
+            43,
+            13,
+            37,
+            72
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1161830874,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 8
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          28,
+          95,
+          31,
+          27,
+          73,
+          12
+        ],
+        "a": [
+          42,
+          68,
+          54,
+          7,
+          30,
+          53
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          73,
+          95,
+          12,
+          27,
+          24
+        ],
+        "a": [
+          42,
+          68,
+          53,
+          30,
+          54,
+          7
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            24
+          ],
+          "lose": [
+            73,
+            95,
+            12,
+            27
+          ]
+        },
+        "a": {
+          "win": [
+            68,
+            53,
+            30,
+            54
+          ],
+          "lose": [
+            42,
+            7
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3816266635,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 10
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          63,
+          2,
+          37,
+          55,
+          75,
+          30
+        ],
+        "a": [
+          56,
+          82,
+          12,
+          0,
+          68,
+          47
+        ]
+      },
+      "played": {
+        "h": [
+          30,
+          75,
+          37,
+          2,
+          55,
+          63
+        ],
+        "a": [
+          0,
+          47,
+          82,
+          12,
+          56,
+          31
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            75,
+            37,
+            2
+          ],
+          "lose": [
+            30,
+            55,
+            63
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            56,
+            31
+          ],
+          "lose": [
+            47,
+            82,
+            12
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2175735100,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          28,
+          60,
+          38,
+          37,
+          13,
+          15
+        ],
+        "a": [
+          34,
+          95,
+          89,
+          55,
+          36,
+          10
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          60,
+          38,
+          13,
+          37,
+          15
+        ],
+        "a": [
+          34,
+          95,
+          10,
+          89,
+          55,
+          36
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            60,
+            15
+          ],
+          "lose": [
+            38,
+            13,
+            37
+          ]
+        },
+        "a": {
+          "win": [
+            10,
+            89,
+            55
+          ],
+          "lose": [
+            34,
+            95,
+            36
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 5
+      }
+    },
+    {
+      "seed": 535203565,
+      "winner": "h",
+      "score": {
+        "h": 13,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          1,
+          68,
+          82,
+          51,
+          87,
+          85
+        ],
+        "a": [
+          5,
+          56,
+          4,
+          27,
+          69,
+          21
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          68,
+          1,
+          87,
+          85,
+          82
+        ],
+        "a": [
+          5,
+          4,
+          69,
+          21,
+          27,
+          56
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            68,
+            87,
+            85
+          ],
+          "lose": [
+            51,
+            1,
+            82
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            69,
+            56
+          ],
+          "lose": [
+            4,
+            21,
+            27
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3189639326,
+      "winner": "h",
+      "score": {
+        "h": 8,
+        "a": 2
+      },
+      "ball": "h",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          0,
+          62,
+          32,
+          29,
+          53,
+          70
+        ],
+        "a": [
+          28,
+          75,
+          33,
+          8,
+          91,
+          19
+        ]
+      },
+      "played": {
+        "h": [
+          62,
+          70,
+          0,
+          29,
+          53,
+          32,
+          20
+        ],
+        "a": [
+          28,
+          75,
+          33,
+          91,
+          12,
+          8,
+          19
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            53,
+            32,
+            20
+          ],
+          "lose": [
+            62,
+            70,
+            29
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            75
+          ],
+          "lose": [
+            33,
+            12,
+            8,
+            91,
+            19
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1549107791,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 2
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          75,
+          25,
+          36,
+          34,
+          45,
+          64
+        ],
+        "a": [
+          84,
+          52,
+          15,
+          56,
+          57,
+          89
+        ]
+      },
+      "played": {
+        "h": [
+          75,
+          34,
+          25,
+          64,
+          35,
+          45
+        ],
+        "a": [
+          57,
+          52,
+          89,
+          56,
+          15,
+          84
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            75,
+            25,
+            64,
+            35,
+            45
+          ],
+          "lose": [
+            34
+          ]
+        },
+        "a": {
+          "win": [],
+          "lose": [
+            57,
+            89,
+            56,
+            52,
+            15,
+            84
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 4203543552,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 10
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          56,
+          39,
+          36,
+          27,
+          47,
+          74
+        ],
+        "a": [
+          63,
+          57,
+          76,
+          70,
+          29,
+          45
+        ]
+      },
+      "played": {
+        "h": [
+          74,
+          39,
+          47,
+          27,
+          56,
+          36
+        ],
+        "a": [
+          29,
+          76,
+          57,
+          70,
+          45,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            39
+          ],
+          "lose": [
+            74,
+            47,
+            27,
+            56,
+            36
+          ]
+        },
+        "a": {
+          "win": [
+            29,
+            57,
+            70,
+            63
+          ],
+          "lose": [
+            76,
+            45
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2563012017,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          89,
+          70,
+          5,
+          79,
+          4
+        ],
+        "a": [
+          86,
+          65,
+          16,
+          94,
+          43,
+          13
+        ]
+      },
+      "played": {
+        "h": [
+          4,
+          5,
+          0,
+          70,
+          79,
+          89
+        ],
+        "a": [
+          86,
+          94,
+          16,
+          43,
+          13,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            4,
+            5,
+            0,
+            70,
+            79
+          ],
+          "lose": [
+            89
+          ]
+        },
+        "a": {
+          "win": [
+            65
+          ],
+          "lose": [
+            86,
+            94,
+            16,
+            43,
+            13
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 922480482,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          17,
+          33,
+          20,
+          69,
+          42,
+          68
+        ],
+        "a": [
+          66,
+          71,
+          25,
+          28,
+          12,
+          52
+        ]
+      },
+      "played": {
+        "h": [
+          42,
+          33,
+          17,
+          68,
+          20,
+          5,
+          69
+        ],
+        "a": [
+          28,
+          25,
+          52,
+          12,
+          66,
+          43,
+          60
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            68,
+            5
+          ],
+          "lose": [
+            42,
+            33,
+            17,
+            20,
+            69
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            25,
+            52,
+            66,
+            60
+          ],
+          "lose": [
+            12,
+            43
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3576916243,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 12
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          91,
+          95,
+          69,
+          8,
+          64,
+          49
+        ],
+        "a": [
+          97,
+          60,
+          4,
+          24,
+          29,
+          82
+        ]
+      },
+      "played": {
+        "h": [
+          64,
+          69,
+          91,
+          95,
+          8,
+          49
+        ],
+        "a": [
+          4,
+          29,
+          60,
+          97,
+          24,
+          82
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [],
+          "lose": [
+            64,
+            69,
+            95,
+            91,
+            8,
+            49
+          ]
+        },
+        "a": {
+          "win": [
+            4,
+            29,
+            97,
+            82
+          ],
+          "lose": [
+            60,
+            24
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 4
+      }
+    },
+    {
+      "seed": 1936384708,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          90,
+          32,
+          56,
+          85,
+          86
+        ],
+        "a": [
+          63,
+          24,
+          70,
+          75,
+          77,
+          54
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          86,
+          90,
+          32,
+          56,
+          85
+        ],
+        "a": [
+          75,
+          77,
+          54,
+          70,
+          24,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            86,
+            32,
+            56
+          ],
+          "lose": [
+            90,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            54,
+            63
+          ],
+          "lose": [
+            75,
+            77,
+            70,
+            24
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 295853173,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 6
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          40,
+          21,
+          97,
+          19,
+          73
+        ],
+        "a": [
+          16,
+          45,
+          63,
+          5,
+          75,
+          90
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          73,
+          97,
+          21,
+          40,
+          19
+        ],
+        "a": [
+          5,
+          75,
+          16,
+          90,
+          63,
+          45
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            97,
+            21,
+            40
+          ],
+          "lose": [
+            51,
+            73,
+            19
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            75,
+            45
+          ],
+          "lose": [
+            16,
+            90,
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2950288934,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          25,
+          73,
+          67,
+          24,
+          7,
+          66
+        ],
+        "a": [
+          65,
+          36,
+          54,
+          43,
+          9,
+          85
+        ]
+      },
+      "played": {
+        "h": [
+          73,
+          67,
+          25,
+          66,
+          82,
+          24
+        ],
+        "a": [
+          9,
+          54,
+          36,
+          85,
+          43,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            25,
+            66,
+            82,
+            24
+          ],
+          "lose": [
+            73,
+            67
+          ]
+        },
+        "a": {
+          "win": [
+            9,
+            54
+          ],
+          "lose": [
+            36,
+            85,
+            43,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1309757399,
+      "winner": "a",
+      "score": {
+        "h": 6,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 5,
+      "initial": {
+        "h": [
+          37,
+          34,
+          84,
+          75,
+          39,
+          15
+        ],
+        "a": [
+          44,
+          61,
+          46,
+          38,
+          58,
+          53
+        ]
+      },
+      "played": {
+        "h": [
+          75,
+          34,
+          37,
+          15,
+          39
+        ],
+        "a": [
+          44,
+          46,
+          58,
+          53,
+          38
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            75,
+            34,
+            15
+          ],
+          "lose": [
+            37,
+            39
+          ]
+        },
+        "a": {
+          "win": [
+            58,
+            38
+          ],
+          "lose": [
+            44,
+            46,
+            53
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3964193160,
+      "winner": "h",
+      "score": {
+        "h": 13,
+        "a": 5
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          45,
+          91,
+          80,
+          65,
+          7,
+          90
+        ],
+        "a": [
+          58,
+          55,
+          12,
+          79,
+          34,
+          31
+        ]
+      },
+      "played": {
+        "h": [
+          90,
+          91,
+          80,
+          65,
+          7,
+          40,
+          45
+        ],
+        "a": [
+          34,
+          58,
+          12,
+          31,
+          79,
+          55
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            91,
+            80,
+            65,
+            40
+          ],
+          "lose": [
+            90,
+            45
+          ]
+        },
+        "a": {
+          "win": [
+            34,
+            55
+          ],
+          "lose": [
+            58,
+            12,
+            31,
+            79
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2323661625,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          79,
+          96,
+          70,
+          65,
+          3,
+          92
+        ],
+        "a": [
+          43,
+          9,
+          80,
+          13,
+          14,
+          31
+        ]
+      },
+      "played": {
+        "h": [
+          3,
+          96,
+          92,
+          79,
+          70,
+          65
+        ],
+        "a": [
+          9,
+          43,
+          13,
+          14,
+          7,
+          8,
+          31
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            96,
+            92,
+            79,
+            65
+          ],
+          "lose": [
+            3,
+            70
+          ]
+        },
+        "a": {
+          "win": [
+            9,
+            8
+          ],
+          "lose": [
+            43,
+            13,
+            14,
+            31
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 683130090,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 15
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          28,
+          85,
+          35,
+          27,
+          31,
+          67
+        ],
+        "a": [
+          24,
+          5,
+          9,
+          91,
+          17,
+          14
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          67,
+          27,
+          35,
+          31,
+          85
+        ],
+        "a": [
+          5,
+          91,
+          17,
+          9,
+          24,
+          14
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [],
+          "lose": [
+            28,
+            67,
+            27,
+            35,
+            31,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            91,
+            9,
+            24,
+            14
+          ],
+          "lose": [
+            17
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 4
+      }
+    },
+    {
+      "seed": 3337565851,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 0
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          68,
+          92,
+          42,
+          85,
+          35
+        ],
+        "a": [
+          56,
+          7,
+          9,
+          71,
+          18,
+          66
+        ]
+      },
+      "played": {
+        "h": [
+          68,
+          85,
+          92,
+          42,
+          51,
+          35
+        ],
+        "a": [
+          9,
+          66,
+          18,
+          56,
+          7,
+          71
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            68,
+            92,
+            51,
+            35
+          ],
+          "lose": [
+            85,
+            42
+          ]
+        },
+        "a": {
+          "win": [
+            66
+          ],
+          "lose": [
+            9,
+            18,
+            7,
+            56,
+            71
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1697034316,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 12
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          28,
+          73,
+          31,
+          1,
+          75,
+          53
+        ],
+        "a": [
+          81,
+          22,
+          11,
+          27,
+          94,
+          86
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          75,
+          73,
+          53,
+          18,
+          23
+        ],
+        "a": [
+          81,
+          94,
+          11,
+          86,
+          22,
+          27
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            75,
+            18
+          ],
+          "lose": [
+            73,
+            53,
+            23
+          ]
+        },
+        "a": {
+          "win": [
+            11,
+            86,
+            27
+          ],
+          "lose": [
+            81,
+            94,
+            22
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 56502781,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 7
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          42,
+          19,
+          53,
+          43,
+          3,
+          80
+        ],
+        "a": [
+          38,
+          2,
+          39,
+          56,
+          94,
+          71
+        ]
+      },
+      "played": {
+        "h": [
+          42,
+          3,
+          53,
+          43,
+          19,
+          80
+        ],
+        "a": [
+          39,
+          71,
+          38,
+          2,
+          94,
+          56
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            42,
+            3,
+            19
+          ],
+          "lose": [
+            53,
+            43,
+            80
+          ]
+        },
+        "a": {
+          "win": [
+            38,
+            2,
+            56
+          ],
+          "lose": [
+            39,
+            71,
+            94
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2710938542,
+      "winner": "a",
+      "score": {
+        "h": 3,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          5,
+          29,
+          96,
+          43,
+          30,
+          76
+        ],
+        "a": [
+          42,
+          58,
+          82,
+          7,
+          17,
+          93
+        ]
+      },
+      "played": {
+        "h": [
+          5,
+          30,
+          29,
+          43,
+          76,
+          96
+        ],
+        "a": [
+          42,
+          7,
+          58,
+          17,
+          93,
+          82
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            5,
+            30,
+            29
+          ],
+          "lose": [
+            43,
+            76,
+            96
+          ]
+        },
+        "a": {
+          "win": [
+            93,
+            82
+          ],
+          "lose": [
+            42,
+            7,
+            58,
+            17
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 1070407007,
+      "winner": "h",
+      "score": {
+        "h": 8,
+        "a": 6
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          91,
+          43,
+          95,
+          28,
+          58,
+          60
+        ],
+        "a": [
+          97,
+          82,
+          85,
+          83,
+          75,
+          19
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          60,
+          95,
+          91,
+          58,
+          43
+        ],
+        "a": [
+          97,
+          82,
+          75,
+          19,
+          83,
+          85
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            60,
+            91,
+            58
+          ],
+          "lose": [
+            95,
+            43
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            85
+          ],
+          "lose": [
+            97,
+            82,
+            19,
+            83
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3724842768,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          1,
+          62,
+          73,
+          75,
+          79,
+          81
+        ],
+        "a": [
+          51,
+          77,
+          46,
+          27,
+          91,
+          4
+        ]
+      },
+      "played": {
+        "h": [
+          62,
+          1,
+          75,
+          73,
+          81,
+          79
+        ],
+        "a": [
+          51,
+          4,
+          51,
+          91,
+          27,
+          77
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            81
+          ],
+          "lose": [
+            62,
+            1,
+            75,
+            73,
+            79
+          ]
+        },
+        "a": {
+          "win": [
+            46,
+            4,
+            51,
+            91,
+            77
+          ],
+          "lose": [
+            27
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2084311233,
+      "winner": "h",
+      "score": {
+        "h": 16,
+        "a": 0
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          14,
+          35,
+          95,
+          76,
+          77
+        ],
+        "a": [
+          65,
+          81,
+          70,
+          73,
+          27,
+          21
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          77,
+          95,
+          14,
+          35,
+          76
+        ],
+        "a": [
+          21,
+          81,
+          73,
+          70,
+          27,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            77,
+            14,
+            35,
+            76
+          ],
+          "lose": [
+            95
+          ]
+        },
+        "a": {
+          "win": [],
+          "lose": [
+            21,
+            81,
+            70,
+            73,
+            27,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 443779698,
+      "winner": "a",
+      "score": {
+        "h": 6,
+        "a": 12
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          9,
+          30,
+          15,
+          5,
+          69,
+          76
+        ],
+        "a": [
+          27,
+          25,
+          59,
+          28,
+          96,
+          55
+        ]
+      },
+      "played": {
+        "h": [
+          5,
+          9,
+          30,
+          69,
+          15,
+          76
+        ],
+        "a": [
+          28,
+          25,
+          59,
+          96,
+          26,
+          27
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            5,
+            30,
+            69
+          ],
+          "lose": [
+            9,
+            15,
+            76
+          ]
+        },
+        "a": {
+          "win": [
+            96,
+            26,
+            27
+          ],
+          "lose": [
+            28,
+            59,
+            25
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 3098215459,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 12
+      },
+      "ball": "a",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          16,
+          85,
+          61,
+          0,
+          30,
+          37
+        ],
+        "a": [
+          14,
+          53,
+          40,
+          75,
+          45,
+          60
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          30,
+          16,
+          37,
+          61,
+          54,
+          85
+        ],
+        "a": [
+          53,
+          45,
+          75,
+          40,
+          39,
+          96,
+          60
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            30,
+            16,
+            54
+          ],
+          "lose": [
+            37,
+            61,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            40,
+            39,
+            60
+          ],
+          "lose": [
+            53,
+            45,
+            75,
+            96
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 6
+      }
+    },
+    {
+      "seed": 1457683924,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 13
+      },
+      "ball": "a",
+      "faceoffs": 8,
+      "initial": {
+        "h": [
+          28,
+          62,
+          68,
+          75,
+          91,
+          52
+        ],
+        "a": [
+          1,
+          97,
+          44,
+          45,
+          55,
+          9
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          62,
+          75,
+          91,
+          36,
+          68,
+          14,
+          52
+        ],
+        "a": [
+          97,
+          44,
+          45,
+          9,
+          1,
+          46,
+          55,
+          53
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            62,
+            75,
+            68,
+            14
+          ],
+          "lose": [
+            91,
+            36,
+            52
+          ]
+        },
+        "a": {
+          "win": [
+            45,
+            1,
+            53
+          ],
+          "lose": [
+            97,
+            44,
+            9,
+            46,
+            55
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 1
+      }
+    },
+    {
+      "seed": 4112119685,
+      "winner": "h",
+      "score": {
+        "h": 13,
+        "a": 12
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          43,
+          3,
+          40,
+          51,
+          2,
+          76
+        ],
+        "a": [
+          16,
+          34,
+          25,
+          69,
+          75,
+          90
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          3,
+          2,
+          40,
+          76,
+          43
+        ],
+        "a": [
+          75,
+          25,
+          34,
+          69,
+          16,
+          90
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            3
+          ],
+          "lose": [
+            2,
+            40,
+            76,
+            43
+          ]
+        },
+        "a": {
+          "win": [
+            34,
+            69,
+            16,
+            90
+          ],
+          "lose": [
+            75,
+            25
+          ]
+        }
+      },
+      "endGame": {
+        "h": 8,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2471588150,
+      "winner": "h",
+      "score": {
+        "h": 18,
+        "a": 1
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          5,
+          29,
+          96,
+          1,
+          57,
+          18
+        ],
+        "a": [
+          79,
+          62,
+          87,
+          16,
+          56,
+          85
+        ]
+      },
+      "played": {
+        "h": [
+          5,
+          57,
+          29,
+          18,
+          1,
+          96
+        ],
+        "a": [
+          87,
+          62,
+          79,
+          16,
+          56,
+          85
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            5,
+            29,
+            18,
+            1,
+            96
+          ],
+          "lose": [
+            57
+          ]
+        },
+        "a": {
+          "win": [
+            62
+          ],
+          "lose": [
+            87,
+            79,
+            16,
+            56,
+            85
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 831056615,
+      "winner": "a",
+      "score": {
+        "h": 2,
+        "a": 12
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          17,
+          16,
+          76,
+          45,
+          42,
+          58
+        ],
+        "a": [
+          5,
+          82,
+          52,
+          51,
+          64,
+          26
+        ]
+      },
+      "played": {
+        "h": [
+          42,
+          58,
+          16,
+          17,
+          45,
+          76
+        ],
+        "a": [
+          5,
+          51,
+          52,
+          64,
+          26,
+          82
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            17
+          ],
+          "lose": [
+            42,
+            58,
+            16,
+            45,
+            76
+          ]
+        },
+        "a": {
+          "win": [
+            64,
+            51,
+            52,
+            26,
+            82
+          ],
+          "lose": [
+            5
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3485492376,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          44,
+          85,
+          39,
+          16,
+          60,
+          25
+        ],
+        "a": [
+          97,
+          7,
+          63,
+          34,
+          19,
+          64
+        ]
+      },
+      "played": {
+        "h": [
+          25,
+          60,
+          44,
+          66,
+          39,
+          16,
+          85
+        ],
+        "a": [
+          97,
+          19,
+          64,
+          34,
+          7,
+          80,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            25,
+            60,
+            44,
+            66
+          ],
+          "lose": [
+            39,
+            16,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            7,
+            80,
+            63
+          ],
+          "lose": [
+            97,
+            19,
+            64,
+            34
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1844960841,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 0
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          65,
+          60,
+          86,
+          28,
+          75,
+          25
+        ],
+        "a": [
+          7,
+          71,
+          63,
+          44,
+          34,
+          55
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          25,
+          75,
+          60,
+          86,
+          83
+        ],
+        "a": [
+          34,
+          7,
+          44,
+          55,
+          71,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            25,
+            75,
+            60,
+            86,
+            83
+          ],
+          "lose": []
+        },
+        "a": {
+          "win": [],
+          "lose": [
+            34,
+            7,
+            44,
+            55,
+            71,
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 204429306,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 15
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          27,
+          86,
+          54,
+          24,
+          65,
+          96
+        ],
+        "a": [
+          31,
+          69,
+          90,
+          94,
+          52,
+          67
+        ]
+      },
+      "played": {
+        "h": [
+          86,
+          54,
+          24,
+          96,
+          27,
+          65
+        ],
+        "a": [
+          69,
+          52,
+          31,
+          94,
+          90,
+          67
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            24
+          ],
+          "lose": [
+            86,
+            54,
+            96,
+            27,
+            65
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            52,
+            94,
+            90,
+            67
+          ],
+          "lose": [
+            31
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2858865067,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          90,
+          25,
+          76,
+          8,
+          91,
+          82
+        ],
+        "a": [
+          94,
+          86,
+          49,
+          28,
+          65,
+          38
+        ]
+      },
+      "played": {
+        "h": [
+          25,
+          8,
+          91,
+          72,
+          90,
+          82
+        ],
+        "a": [
+          86,
+          28,
+          38,
+          94,
+          65,
+          49
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            25,
+            8,
+            90
+          ],
+          "lose": [
+            91,
+            72,
+            82
+          ]
+        },
+        "a": {
+          "win": [
+            38,
+            94,
+            49
+          ],
+          "lose": [
+            86,
+            28,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1218333532,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 12
+      },
+      "ball": "h",
+      "faceoffs": 5,
+      "initial": {
+        "h": [
+          87,
+          85,
+          89,
+          0,
+          65,
+          29
+        ],
+        "a": [
+          60,
+          36,
+          15,
+          1,
+          53,
+          31
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          29,
+          85,
+          65,
+          89
+        ],
+        "a": [
+          53,
+          36,
+          60,
+          15,
+          1
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            29
+          ],
+          "lose": [
+            85,
+            65,
+            89
+          ]
+        },
+        "a": {
+          "win": [
+            60,
+            15,
+            1
+          ],
+          "lose": [
+            53,
+            36
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 3872769293,
+      "winner": "h",
+      "score": {
+        "h": 12,
+        "a": 10
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          12,
+          54,
+          69,
+          19,
+          85
+        ],
+        "a": [
+          76,
+          25,
+          89,
+          71,
+          81,
+          11
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          54,
+          69,
+          12,
+          19,
+          85
+        ],
+        "a": [
+          25,
+          81,
+          30,
+          11,
+          76,
+          71
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            69,
+            19
+          ],
+          "lose": [
+            54,
+            12,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            81,
+            11,
+            71
+          ],
+          "lose": [
+            25,
+            30,
+            76
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2232237758,
+      "winner": "a",
+      "score": {
+        "h": 3,
+        "a": 4
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          51,
+          9,
+          68,
+          0,
+          45,
+          60
+        ],
+        "a": [
+          97,
+          55,
+          93,
+          5,
+          35,
+          80
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          51,
+          9,
+          68,
+          45,
+          60
+        ],
+        "a": [
+          97,
+          5,
+          93,
+          55,
+          80,
+          35
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            9,
+            60
+          ],
+          "lose": [
+            51,
+            45,
+            68
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            80
+          ],
+          "lose": [
+            97,
+            93,
+            55,
+            35
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 591706223,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          0,
+          4,
+          37,
+          29,
+          69,
+          92
+        ],
+        "a": [
+          8,
+          79,
+          71,
+          43,
+          91,
+          35
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          4,
+          0,
+          29,
+          37,
+          69
+        ],
+        "a": [
+          91,
+          8,
+          35,
+          43,
+          79,
+          71
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            92,
+            4,
+            0,
+            37,
+            69
+          ],
+          "lose": [
+            29
+          ]
+        },
+        "a": {
+          "win": [
+            43
+          ],
+          "lose": [
+            91,
+            8,
+            35,
+            79,
+            71
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3246141984,
+      "winner": "a",
+      "score": {
+        "h": 2,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          56,
+          71,
+          91,
+          5,
+          88,
+          67
+        ],
+        "a": [
+          75,
+          37,
+          49,
+          94,
+          97,
+          54
+        ]
+      },
+      "played": {
+        "h": [
+          5,
+          88,
+          91,
+          71,
+          67,
+          56
+        ],
+        "a": [
+          75,
+          97,
+          54,
+          37,
+          94,
+          49
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            5,
+            88,
+            91
+          ],
+          "lose": [
+            71,
+            67,
+            56
+          ]
+        },
+        "a": {
+          "win": [
+            37,
+            94,
+            49
+          ],
+          "lose": [
+            75,
+            97,
+            54
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1605610449,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 5
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          43,
+          71,
+          22,
+          97,
+          7,
+          70
+        ],
+        "a": [
+          45,
+          56,
+          82,
+          95,
+          24,
+          52
+        ]
+      },
+      "played": {
+        "h": [
+          97,
+          43,
+          70,
+          7,
+          34,
+          71,
+          22
+        ],
+        "a": [
+          95,
+          52,
+          45,
+          82,
+          24,
+          89
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            97,
+            70,
+            34,
+            22
+          ],
+          "lose": [
+            43,
+            71
+          ]
+        },
+        "a": {
+          "win": [
+            52,
+            24
+          ],
+          "lose": [
+            95,
+            45,
+            82,
+            89
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 4260046210,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 9
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          65,
+          43,
+          19,
+          55,
+          76,
+          59
+        ],
+        "a": [
+          97,
+          73,
+          32,
+          39,
+          58,
+          81
+        ]
+      },
+      "played": {
+        "h": [
+          59,
+          43,
+          19,
+          55,
+          65,
+          76
+        ],
+        "a": [
+          97,
+          81,
+          39,
+          32,
+          3,
+          58
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            76
+          ],
+          "lose": [
+            59,
+            43,
+            19,
+            55,
+            65
+          ]
+        },
+        "a": {
+          "win": [
+            97,
+            81,
+            39,
+            32,
+            3
+          ],
+          "lose": [
+            58
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2619514675,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          13,
+          17,
+          88,
+          51,
+          14,
+          22
+        ],
+        "a": [
+          83,
+          89,
+          49,
+          28,
+          16,
+          73
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          88,
+          13,
+          45,
+          17,
+          74
+        ],
+        "a": [
+          28,
+          73,
+          16,
+          89,
+          83,
+          49
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            88
+          ],
+          "lose": [
+            13,
+            45,
+            17,
+            74
+          ]
+        },
+        "a": {
+          "win": [
+            16,
+            89,
+            83,
+            49
+          ],
+          "lose": [
+            28,
+            73
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 978983140,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 8
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          65,
+          44,
+          32,
+          42,
+          68,
+          37
+        ],
+        "a": [
+          95,
+          83,
+          75,
+          1,
+          19,
+          30
+        ]
+      },
+      "played": {
+        "h": [
+          42,
+          68,
+          32,
+          44,
+          65,
+          37
+        ],
+        "a": [
+          75,
+          95,
+          30,
+          19,
+          83,
+          1
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            42,
+            68,
+            44,
+            37
+          ],
+          "lose": [
+            32,
+            65
+          ]
+        },
+        "a": {
+          "win": [
+            30,
+            83
+          ],
+          "lose": [
+            75,
+            95,
+            19,
+            1
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 3633418901,
+      "winner": "h",
+      "score": {
+        "h": 8,
+        "a": 4
+      },
+      "ball": "h",
+      "faceoffs": 5,
+      "initial": {
+        "h": [
+          97,
+          13,
+          15,
+          94,
+          50,
+          46
+        ],
+        "a": [
+          4,
+          27,
+          75,
+          77,
+          65,
+          19
+        ]
+      },
+      "played": {
+        "h": [
+          97,
+          94,
+          46,
+          15,
+          13
+        ],
+        "a": [
+          75,
+          27,
+          19,
+          77,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            94,
+            46,
+            13
+          ],
+          "lose": [
+            97,
+            15
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            77
+          ],
+          "lose": [
+            27,
+            19,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1992887366,
+      "winner": "a",
+      "score": {
+        "h": 4,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          82,
+          56,
+          73,
+          28,
+          63,
+          4
+        ],
+        "a": [
+          0,
+          39,
+          93,
+          17,
+          2,
+          80
+        ]
+      },
+      "played": {
+        "h": [
+          4,
+          28,
+          73,
+          82,
+          56,
+          63
+        ],
+        "a": [
+          0,
+          17,
+          39,
+          93,
+          2,
+          80
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            28,
+            73,
+            82
+          ],
+          "lose": [
+            4,
+            56,
+            63
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            2,
+            80
+          ],
+          "lose": [
+            17,
+            39,
+            93
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 352355831,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 8
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          58,
+          9,
+          80,
+          2,
+          79,
+          82
+        ],
+        "a": [
+          51,
+          52,
+          86,
+          0,
+          77,
+          15
+        ]
+      },
+      "played": {
+        "h": [
+          80,
+          2,
+          9,
+          58,
+          79,
+          82
+        ],
+        "a": [
+          0,
+          51,
+          86,
+          52,
+          77,
+          15
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            58,
+            79
+          ],
+          "lose": [
+            80,
+            2,
+            9,
+            82
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            51,
+            86,
+            15
+          ],
+          "lose": [
+            52,
+            77
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3006791592,
+      "winner": "a",
+      "score": {
+        "h": 9,
+        "a": 10
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          84,
+          58,
+          37,
+          62,
+          9,
+          31
+        ],
+        "a": [
+          55,
+          81,
+          82,
+          95,
+          69,
+          64
+        ]
+      },
+      "played": {
+        "h": [
+          62,
+          9,
+          58,
+          37,
+          84,
+          31
+        ],
+        "a": [
+          81,
+          69,
+          82,
+          64,
+          95,
+          55
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            62,
+            58,
+            31
+          ],
+          "lose": [
+            9,
+            37,
+            84
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            64,
+            95
+          ],
+          "lose": [
+            81,
+            82,
+            55
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1366260057,
+      "winner": "a",
+      "score": {
+        "h": 6,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          17,
+          0,
+          12,
+          91,
+          88,
+          53
+        ],
+        "a": [
+          8,
+          73,
+          49,
+          75,
+          54,
+          64
+        ]
+      },
+      "played": {
+        "h": [
+          17,
+          91,
+          0,
+          88,
+          12,
+          53
+        ],
+        "a": [
+          75,
+          8,
+          64,
+          73,
+          54,
+          49
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            91,
+            0,
+            88,
+            53
+          ],
+          "lose": [
+            17,
+            12
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            54
+          ],
+          "lose": [
+            8,
+            64,
+            73,
+            49
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 2
+      }
+    },
+    {
+      "seed": 4020695818,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          81,
+          56,
+          22,
+          42,
+          49,
+          47
+        ],
+        "a": [
+          0,
+          12,
+          46,
+          60,
+          95,
+          16
+        ]
+      },
+      "played": {
+        "h": [
+          47,
+          42,
+          85,
+          56,
+          81,
+          49
+        ],
+        "a": [
+          0,
+          95,
+          60,
+          16,
+          46,
+          12
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            42
+          ],
+          "lose": [
+            47,
+            85,
+            56,
+            81,
+            49
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            60,
+            16,
+            46,
+            12
+          ],
+          "lose": [
+            95
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2380164283,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 6
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          5,
+          58,
+          37,
+          7,
+          12,
+          50
+        ],
+        "a": [
+          42,
+          93,
+          92,
+          30,
+          65,
+          69
+        ]
+      },
+      "played": {
+        "h": [
+          5,
+          58,
+          50,
+          37,
+          7,
+          90,
+          12
+        ],
+        "a": [
+          42,
+          30,
+          69,
+          93,
+          65,
+          92
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            5,
+            58,
+            37,
+            90
+          ],
+          "lose": [
+            50,
+            12
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            92
+          ],
+          "lose": [
+            42,
+            30,
+            93,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 739632748,
+      "winner": "a",
+      "score": {
+        "h": 6,
+        "a": 14
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          39,
+          79,
+          12,
+          27,
+          94,
+          57
+        ],
+        "a": [
+          97,
+          80,
+          54,
+          44,
+          56,
+          92
+        ]
+      },
+      "played": {
+        "h": [
+          57,
+          94,
+          39,
+          27,
+          79,
+          12
+        ],
+        "a": [
+          44,
+          97,
+          92,
+          54,
+          80,
+          56
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            79
+          ],
+          "lose": [
+            57,
+            94,
+            39,
+            27,
+            12
+          ]
+        },
+        "a": {
+          "win": [
+            44,
+            97,
+            92,
+            54,
+            56
+          ],
+          "lose": [
+            80
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3394068509,
+      "winner": "a",
+      "score": {
+        "h": 1,
+        "a": 19
+      },
+      "ball": "a",
+      "faceoffs": 8,
+      "initial": {
+        "h": [
+          43,
+          45,
+          4,
+          16,
+          2,
+          77
+        ],
+        "a": [
+          97,
+          69,
+          58,
+          0,
+          32,
+          70
+        ]
+      },
+      "played": {
+        "h": [
+          4,
+          45,
+          16,
+          77,
+          2,
+          37,
+          43,
+          54
+        ],
+        "a": [
+          0,
+          58,
+          97,
+          32,
+          25,
+          69,
+          70,
+          34
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [],
+          "lose": [
+            4,
+            45,
+            16,
+            77,
+            2,
+            37,
+            43,
+            54
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            58,
+            97,
+            32,
+            25,
+            69,
+            70,
+            34
+          ],
+          "lose": []
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1753536974,
+      "winner": "a",
+      "score": {
+        "h": 3,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          24,
+          37,
+          52,
+          1,
+          30,
+          12
+        ],
+        "a": [
+          35,
+          73,
+          15,
+          96,
+          45,
+          4
+        ]
+      },
+      "played": {
+        "h": [
+          30,
+          52,
+          12,
+          37,
+          1,
+          24
+        ],
+        "a": [
+          4,
+          15,
+          73,
+          96,
+          45,
+          35
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            52,
+            37
+          ],
+          "lose": [
+            30,
+            12,
+            1,
+            24
+          ]
+        },
+        "a": {
+          "win": [
+            4,
+            73,
+            35
+          ],
+          "lose": [
+            15,
+            96,
+            45
+          ]
+        }
+      },
+      "endGame": {
+        "h": 2,
+        "a": 0
+      }
+    },
+    {
+      "seed": 113005439,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          43,
+          36,
+          52,
+          8,
+          60,
+          67
+        ],
+        "a": [
+          0,
+          27,
+          17,
+          9,
+          94,
+          64
+        ]
+      },
+      "played": {
+        "h": [
+          36,
+          8,
+          60,
+          52,
+          67,
+          43
+        ],
+        "a": [
+          0,
+          9,
+          73,
+          17,
+          64,
+          94
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            8,
+            60,
+            52,
+            43
+          ],
+          "lose": [
+            36,
+            67
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            64
+          ],
+          "lose": [
+            9,
+            73,
+            17,
+            94
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2767441200,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 10
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          17,
+          2,
+          80,
+          85,
+          87,
+          13
+        ],
+        "a": [
+          84,
+          19,
+          88,
+          75,
+          22,
+          35
+        ]
+      },
+      "played": {
+        "h": [
+          87,
+          17,
+          85,
+          2,
+          13,
+          80
+        ],
+        "a": [
+          75,
+          35,
+          88,
+          84,
+          22,
+          19
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            17,
+            13
+          ],
+          "lose": [
+            87,
+            85,
+            2,
+            80
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            88,
+            84,
+            19
+          ],
+          "lose": [
+            35,
+            22
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1126909665,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 11
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          95,
+          52,
+          59,
+          68,
+          56,
+          31
+        ],
+        "a": [
+          17,
+          24,
+          88,
+          0,
+          39,
+          11
+        ]
+      },
+      "played": {
+        "h": [
+          59,
+          68,
+          52,
+          95,
+          56,
+          31
+        ],
+        "a": [
+          0,
+          88,
+          39,
+          11,
+          17,
+          24
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            52,
+            56
+          ],
+          "lose": [
+            59,
+            68,
+            95,
+            31
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            88,
+            11,
+            24
+          ],
+          "lose": [
+            39,
+            17
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 4
+      }
+    },
+    {
+      "seed": 3781345426,
+      "winner": "a",
+      "score": {
+        "h": 3,
+        "a": 13
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          75,
+          16,
+          3,
+          65,
+          57,
+          76
+        ],
+        "a": [
+          24,
+          29,
+          25,
+          9,
+          34,
+          11
+        ]
+      },
+      "played": {
+        "h": [
+          16,
+          3,
+          75,
+          76,
+          57,
+          65
+        ],
+        "a": [
+          25,
+          9,
+          29,
+          11,
+          34,
+          10
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            57
+          ],
+          "lose": [
+            16,
+            3,
+            75,
+            76,
+            65
+          ]
+        },
+        "a": {
+          "win": [
+            25,
+            9,
+            29,
+            11,
+            10
+          ],
+          "lose": [
+            34
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 6
+      }
+    },
+    {
+      "seed": 2140813891,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          56,
+          71,
+          21,
+          8,
+          9,
+          87
+        ],
+        "a": [
+          65,
+          60,
+          26,
+          43,
+          84,
+          18
+        ]
+      },
+      "played": {
+        "h": [
+          9,
+          8,
+          56,
+          21,
+          87,
+          71
+        ],
+        "a": [
+          60,
+          26,
+          18,
+          43,
+          84,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            9,
+            8,
+            21,
+            87
+          ],
+          "lose": [
+            56,
+            71
+          ]
+        },
+        "a": {
+          "win": [
+            18,
+            65
+          ],
+          "lose": [
+            60,
+            26,
+            43,
+            84
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 500282356,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 10
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          85,
+          82,
+          67,
+          27,
+          13,
+          20
+        ],
+        "a": [
+          69,
+          31,
+          64,
+          0,
+          65,
+          57
+        ]
+      },
+      "played": {
+        "h": [
+          13,
+          82,
+          27,
+          20,
+          1,
+          50
+        ],
+        "a": [
+          0,
+          31,
+          57,
+          64,
+          69,
+          65
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            82,
+            20,
+            50
+          ],
+          "lose": [
+            13,
+            27,
+            1
+          ]
+        },
+        "a": {
+          "win": [
+            0,
+            57,
+            69
+          ],
+          "lose": [
+            31,
+            64,
+            65
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 2
+      }
+    },
+    {
+      "seed": 3154718117,
+      "winner": "h",
+      "score": {
+        "h": 9,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          56,
+          94,
+          4,
+          97,
+          30,
+          76
+        ],
+        "a": [
+          8,
+          62,
+          93,
+          81,
+          2,
+          82
+        ]
+      },
+      "played": {
+        "h": [
+          97,
+          4,
+          30,
+          94,
+          56,
+          76
+        ],
+        "a": [
+          62,
+          81,
+          8,
+          2,
+          93,
+          82
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            4,
+            30,
+            94,
+            56
+          ],
+          "lose": [
+            97,
+            76
+          ]
+        },
+        "a": {
+          "win": [
+            62,
+            82
+          ],
+          "lose": [
+            81,
+            8,
+            2,
+            93
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1514186582,
+      "winner": "h",
+      "score": {
+        "h": 14,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          94,
+          17,
+          9,
+          0,
+          24,
+          63
+        ],
+        "a": [
+          84,
+          83,
+          58,
+          5,
+          57,
+          77
+        ]
+      },
+      "played": {
+        "h": [
+          17,
+          9,
+          0,
+          94,
+          24,
+          63
+        ],
+        "a": [
+          5,
+          57,
+          58,
+          84,
+          77,
+          83
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            9,
+            0,
+            94,
+            24
+          ],
+          "lose": [
+            17,
+            63
+          ]
+        },
+        "a": {
+          "win": [
+            5,
+            83
+          ],
+          "lose": [
+            57,
+            58,
+            84,
+            77
+          ]
+        }
+      },
+      "endGame": {
+        "h": 5,
+        "a": 0
+      }
+    },
+    {
+      "seed": 4168622343,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 9
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          82,
+          85,
+          37,
+          44,
+          1,
+          94
+        ],
+        "a": [
+          14,
+          31,
+          61,
+          42,
+          81,
+          77
+        ]
+      },
+      "played": {
+        "h": [
+          44,
+          94,
+          37,
+          82,
+          1,
+          85
+        ],
+        "a": [
+          42,
+          81,
+          14,
+          31,
+          61,
+          77
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            37,
+            82
+          ],
+          "lose": [
+            44,
+            94,
+            1,
+            85
+          ]
+        },
+        "a": {
+          "win": [
+            42,
+            81,
+            61,
+            77
+          ],
+          "lose": [
+            14,
+            31
+          ]
+        }
+      },
+      "endGame": {
+        "h": 3,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2528090808,
+      "winner": "draw",
+      "score": {
+        "h": 5,
+        "a": 5
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          38,
+          34,
+          53,
+          57,
+          63,
+          82
+        ],
+        "a": [
+          8,
+          85,
+          36,
+          28,
+          37,
+          15
+        ]
+      },
+      "played": {
+        "h": [
+          57,
+          82,
+          34,
+          38,
+          63,
+          53
+        ],
+        "a": [
+          28,
+          8,
+          15,
+          36,
+          37,
+          66
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            34,
+            38
+          ],
+          "lose": [
+            57,
+            82,
+            63,
+            53
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            8,
+            37,
+            66
+          ],
+          "lose": [
+            15,
+            36
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 887559273,
+      "winner": "h",
+      "score": {
+        "h": 7,
+        "a": 5
+      },
+      "ball": "h",
+      "faceoffs": 5,
+      "initial": {
+        "h": [
+          38,
+          84,
+          69,
+          51,
+          31,
+          40
+        ],
+        "a": [
+          95,
+          37,
+          15,
+          7,
+          29,
+          66
+        ]
+      },
+      "played": {
+        "h": [
+          38,
+          40,
+          84,
+          69,
+          31
+        ],
+        "a": [
+          29,
+          37,
+          15,
+          95,
+          66
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            40
+          ],
+          "lose": [
+            38,
+            84,
+            69,
+            31
+          ]
+        },
+        "a": {
+          "win": [
+            29,
+            15,
+            66
+          ],
+          "lose": [
+            37,
+            95
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3541995034,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 4
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          9,
+          30,
+          77,
+          51,
+          81,
+          19
+        ],
+        "a": [
+          75,
+          93,
+          10,
+          56,
+          39,
+          53
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          81,
+          9,
+          30,
+          77,
+          19
+        ],
+        "a": [
+          75,
+          39,
+          93,
+          53,
+          10,
+          56
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            81,
+            9,
+            30,
+            19
+          ],
+          "lose": [
+            77
+          ]
+        },
+        "a": {
+          "win": [
+            10
+          ],
+          "lose": [
+            75,
+            39,
+            93,
+            53,
+            56
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 1
+      }
+    },
+    {
+      "seed": 1901463499,
+      "winner": "h",
+      "score": {
+        "h": 7,
+        "a": 6
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          60,
+          8,
+          81,
+          0,
+          39,
+          53
+        ],
+        "a": [
+          51,
+          85,
+          76,
+          28,
+          56,
+          90
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          8,
+          81,
+          39,
+          60,
+          53
+        ],
+        "a": [
+          56,
+          76,
+          28,
+          51,
+          21,
+          11
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            8
+          ],
+          "lose": [
+            81,
+            39,
+            60,
+            53
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            51,
+            21,
+            11
+          ],
+          "lose": [
+            56,
+            76
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 260931964,
+      "winner": "h",
+      "score": {
+        "h": 17,
+        "a": 8
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          24,
+          55,
+          16,
+          17,
+          51,
+          96
+        ],
+        "a": [
+          75,
+          56,
+          76,
+          97,
+          2,
+          12
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          17,
+          16,
+          24,
+          96,
+          55
+        ],
+        "a": [
+          97,
+          75,
+          56,
+          12,
+          2,
+          76
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            16,
+            24,
+            55
+          ],
+          "lose": [
+            17,
+            96
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            2
+          ],
+          "lose": [
+            97,
+            56,
+            12,
+            76
+          ]
+        }
+      },
+      "endGame": {
+        "h": 5,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2915367725,
+      "winner": "a",
+      "score": {
+        "h": 0,
+        "a": 17
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          84,
+          60,
+          88,
+          34,
+          71,
+          91
+        ],
+        "a": [
+          43,
+          63,
+          4,
+          28,
+          2,
+          10
+        ]
+      },
+      "played": {
+        "h": [
+          88,
+          34,
+          91,
+          84,
+          60,
+          71
+        ],
+        "a": [
+          63,
+          28,
+          4,
+          28,
+          43,
+          2
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            88
+          ],
+          "lose": [
+            34,
+            91,
+            84,
+            60,
+            71
+          ]
+        },
+        "a": {
+          "win": [
+            10,
+            4,
+            28,
+            43,
+            2
+          ],
+          "lose": [
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 3
+      }
+    },
+    {
+      "seed": 1274836190,
+      "winner": "h",
+      "score": {
+        "h": 15,
+        "a": 3
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          27,
+          1,
+          38,
+          28,
+          37,
+          88
+        ],
+        "a": [
+          51,
+          39,
+          70,
+          63,
+          57,
+          4
+        ]
+      },
+      "played": {
+        "h": [
+          28,
+          88,
+          38,
+          27,
+          1,
+          37
+        ],
+        "a": [
+          51,
+          39,
+          4,
+          57,
+          70,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            88,
+            27,
+            1,
+            37
+          ],
+          "lose": [
+            28,
+            38
+          ]
+        },
+        "a": {
+          "win": [
+            51,
+            4
+          ],
+          "lose": [
+            39,
+            57,
+            70,
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3929271951,
+      "winner": "a",
+      "score": {
+        "h": 7,
+        "a": 8
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          8,
+          42,
+          69,
+          0,
+          60,
+          15
+        ],
+        "a": [
+          28,
+          7,
+          70,
+          9,
+          14,
+          87
+        ]
+      },
+      "played": {
+        "h": [
+          0,
+          42,
+          60,
+          15,
+          69,
+          8
+        ],
+        "a": [
+          7,
+          28,
+          9,
+          87,
+          70,
+          14
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            0,
+            8
+          ],
+          "lose": [
+            42,
+            60,
+            15,
+            69
+          ]
+        },
+        "a": {
+          "win": [
+            28,
+            9,
+            87,
+            70
+          ],
+          "lose": [
+            7,
+            14
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2288740416,
+      "winner": "draw",
+      "score": {
+        "h": 6,
+        "a": 6
+      },
+      "ball": "h",
+      "faceoffs": 5,
+      "initial": {
+        "h": [
+          44,
+          29,
+          96,
+          88,
+          3,
+          49
+        ],
+        "a": [
+          1,
+          75,
+          71,
+          11,
+          12,
+          15
+        ]
+      },
+      "played": {
+        "h": [
+          88,
+          44,
+          96,
+          3,
+          49
+        ],
+        "a": [
+          11,
+          75,
+          15,
+          1,
+          12
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            88,
+            3,
+            49
+          ],
+          "lose": [
+            44,
+            96
+          ]
+        },
+        "a": {
+          "win": [
+            75,
+            15
+          ],
+          "lose": [
+            11,
+            1,
+            12
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 1
+      }
+    },
+    {
+      "seed": 648208881,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 19
+      },
+      "ball": "h",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          79,
+          13,
+          92,
+          17,
+          53,
+          61
+        ],
+        "a": [
+          36,
+          57,
+          2,
+          1,
+          14,
+          86
+        ]
+      },
+      "played": {
+        "h": [
+          17,
+          13,
+          92,
+          61,
+          79,
+          53,
+          71
+        ],
+        "a": [
+          57,
+          86,
+          36,
+          2,
+          14,
+          1,
+          58
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            92
+          ],
+          "lose": [
+            17,
+            13,
+            61,
+            79,
+            53,
+            71
+          ]
+        },
+        "a": {
+          "win": [
+            57,
+            86,
+            2,
+            14,
+            1,
+            58
+          ],
+          "lose": [
+            36
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 3
+      }
+    },
+    {
+      "seed": 3302644642,
+      "winner": "h",
+      "score": {
+        "h": 12,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          8,
+          15,
+          93,
+          73,
+          7,
+          91
+        ],
+        "a": [
+          63,
+          44,
+          9,
+          97,
+          2,
+          37
+        ]
+      },
+      "played": {
+        "h": [
+          91,
+          15,
+          8,
+          73,
+          93,
+          7
+        ],
+        "a": [
+          9,
+          44,
+          97,
+          37,
+          63,
+          2
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            91,
+            8,
+            73,
+            93,
+            7
+          ],
+          "lose": [
+            15
+          ]
+        },
+        "a": {
+          "win": [
+            44
+          ],
+          "lose": [
+            9,
+            97,
+            37,
+            63,
+            2
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1662113107,
+      "winner": "a",
+      "score": {
+        "h": 8,
+        "a": 11
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          43,
+          55,
+          3,
+          57,
+          25,
+          39
+        ],
+        "a": [
+          45,
+          69,
+          16,
+          95,
+          31,
+          52
+        ]
+      },
+      "played": {
+        "h": [
+          25,
+          57,
+          3,
+          39,
+          55,
+          18
+        ],
+        "a": [
+          16,
+          52,
+          95,
+          69,
+          31,
+          45
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            25,
+            57,
+            3,
+            18
+          ],
+          "lose": [
+            39,
+            55
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            31
+          ],
+          "lose": [
+            16,
+            52,
+            95,
+            45
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 2
+      }
+    },
+    {
+      "seed": 21581572,
+      "winner": "h",
+      "score": {
+        "h": 11,
+        "a": 7
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          84,
+          29,
+          17,
+          16,
+          45,
+          25
+        ],
+        "a": [
+          42,
+          75,
+          12,
+          43,
+          81,
+          18
+        ]
+      },
+      "played": {
+        "h": [
+          25,
+          29,
+          17,
+          45,
+          16,
+          84
+        ],
+        "a": [
+          42,
+          75,
+          81,
+          18,
+          12,
+          43
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            25,
+            29,
+            16,
+            84
+          ],
+          "lose": [
+            17,
+            45
+          ]
+        },
+        "a": {
+          "win": [
+            81,
+            18
+          ],
+          "lose": [
+            42,
+            75,
+            12,
+            43
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2676017333,
+      "winner": "a",
+      "score": {
+        "h": 9,
+        "a": 13
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          55,
+          24,
+          73,
+          71,
+          76,
+          18
+        ],
+        "a": [
+          8,
+          64,
+          26,
+          94,
+          13,
+          61
+        ]
+      },
+      "played": {
+        "h": [
+          73,
+          18,
+          76,
+          24,
+          55,
+          71
+        ],
+        "a": [
+          8,
+          61,
+          64,
+          13,
+          77,
+          26
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            73,
+            24
+          ],
+          "lose": [
+            18,
+            76,
+            55,
+            71
+          ]
+        },
+        "a": {
+          "win": [
+            13,
+            64,
+            77,
+            26
+          ],
+          "lose": [
+            8,
+            61
+          ]
+        }
+      },
+      "endGame": {
+        "h": 4,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1035485798,
+      "winner": "a",
+      "score": {
+        "h": 9,
+        "a": 14
+      },
+      "ball": "a",
+      "faceoffs": 7,
+      "initial": {
+        "h": [
+          51,
+          45,
+          31,
+          19,
+          16,
+          39
+        ],
+        "a": [
+          43,
+          30,
+          50,
+          7,
+          87,
+          80
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          16,
+          39,
+          45,
+          31,
+          49,
+          88
+        ],
+        "a": [
+          87,
+          30,
+          43,
+          50,
+          7,
+          74,
+          80
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            39
+          ],
+          "lose": [
+            16,
+            45,
+            31,
+            49,
+            88
+          ]
+        },
+        "a": {
+          "win": [
+            30,
+            50,
+            7,
+            74,
+            80
+          ],
+          "lose": [
+            87,
+            43
+          ]
+        }
+      },
+      "endGame": {
+        "h": 6,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3689921559,
+      "winner": "h",
+      "score": {
+        "h": 14,
+        "a": 10
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          94,
+          50,
+          74,
+          1,
+          70,
+          67
+        ],
+        "a": [
+          69,
+          30,
+          36,
+          63,
+          79,
+          76
+        ]
+      },
+      "played": {
+        "h": [
+          94,
+          74,
+          1,
+          50,
+          67,
+          70
+        ],
+        "a": [
+          30,
+          69,
+          36,
+          76,
+          79,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            94,
+            1,
+            70
+          ],
+          "lose": [
+            74,
+            50,
+            67
+          ]
+        },
+        "a": {
+          "win": [
+            69,
+            76,
+            79
+          ],
+          "lose": [
+            30,
+            36,
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2049390024,
+      "winner": "a",
+      "score": {
+        "h": 5,
+        "a": 8
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          1,
+          15,
+          10,
+          83,
+          77,
+          53
+        ],
+        "a": [
+          91,
+          95,
+          27,
+          37,
+          62,
+          50
+        ]
+      },
+      "played": {
+        "h": [
+          77,
+          15,
+          53,
+          10,
+          83,
+          1
+        ],
+        "a": [
+          50,
+          62,
+          91,
+          95,
+          27,
+          37
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            77,
+            10
+          ],
+          "lose": [
+            15,
+            53,
+            83,
+            1
+          ]
+        },
+        "a": {
+          "win": [
+            62,
+            91,
+            27,
+            37
+          ],
+          "lose": [
+            50,
+            95
+          ]
+        }
+      },
+      "endGame": {
+        "h": 1,
+        "a": 0
+      }
+    },
+    {
+      "seed": 408858489,
+      "winner": "h",
+      "score": {
+        "h": 13,
+        "a": 0
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          97,
+          69,
+          54,
+          51,
+          34,
+          25
+        ],
+        "a": [
+          84,
+          2,
+          87,
+          27,
+          7,
+          32
+        ]
+      },
+      "played": {
+        "h": [
+          51,
+          97,
+          34,
+          25,
+          58,
+          54
+        ],
+        "a": [
+          87,
+          32,
+          27,
+          7,
+          2,
+          84
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            51,
+            97,
+            34,
+            25,
+            58,
+            54
+          ],
+          "lose": []
+        },
+        "a": {
+          "win": [],
+          "lose": [
+            87,
+            32,
+            27,
+            7,
+            2,
+            84
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 3063294250,
+      "winner": "h",
+      "score": {
+        "h": 7,
+        "a": 6
+      },
+      "ball": "h",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          44,
+          64,
+          61,
+          75,
+          89,
+          18
+        ],
+        "a": [
+          57,
+          19,
+          2,
+          8,
+          60,
+          30
+        ]
+      },
+      "played": {
+        "h": [
+          75,
+          64,
+          44,
+          61,
+          18,
+          89
+        ],
+        "a": [
+          57,
+          60,
+          2,
+          30,
+          8,
+          82
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            75,
+            44,
+            89
+          ],
+          "lose": [
+            64,
+            61,
+            18
+          ]
+        },
+        "a": {
+          "win": [
+            60,
+            30,
+            8
+          ],
+          "lose": [
+            57,
+            2,
+            82
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 1422762715,
+      "winner": "a",
+      "score": {
+        "h": 12,
+        "a": 15
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          82,
+          14,
+          36,
+          90,
+          19,
+          35
+        ],
+        "a": [
+          97,
+          77,
+          59,
+          1,
+          3,
+          49
+        ]
+      },
+      "played": {
+        "h": [
+          82,
+          35,
+          90,
+          36,
+          19,
+          14
+        ],
+        "a": [
+          97,
+          3,
+          49,
+          77,
+          59,
+          1
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            90,
+            19,
+            14
+          ],
+          "lose": [
+            82,
+            35,
+            36
+          ]
+        },
+        "a": {
+          "win": [
+            97,
+            3,
+            77
+          ],
+          "lose": [
+            49,
+            59,
+            1
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 5
+      }
+    },
+    {
+      "seed": 4077198476,
+      "winner": "h",
+      "score": {
+        "h": 10,
+        "a": 8
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          45,
+          58,
+          76,
+          97,
+          34,
+          12
+        ],
+        "a": [
+          84,
+          11,
+          46,
+          5,
+          13,
+          86
+        ]
+      },
+      "played": {
+        "h": [
+          34,
+          58,
+          97,
+          76,
+          45,
+          12
+        ],
+        "a": [
+          5,
+          11,
+          86,
+          46,
+          77,
+          84
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            58,
+            97,
+            76,
+            45
+          ],
+          "lose": [
+            34,
+            12
+          ]
+        },
+        "a": {
+          "win": [
+            86,
+            84
+          ],
+          "lose": [
+            11,
+            5,
+            46,
+            77
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 2436666941,
+      "winner": "a",
+      "score": {
+        "h": 6,
+        "a": 10
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          1,
+          61,
+          21,
+          60,
+          38,
+          2
+        ],
+        "a": [
+          73,
+          24,
+          55,
+          43,
+          37,
+          77
+        ]
+      },
+      "played": {
+        "h": [
+          60,
+          38,
+          21,
+          2,
+          61,
+          42
+        ],
+        "a": [
+          73,
+          77,
+          37,
+          43,
+          24,
+          55
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            60,
+            38,
+            2
+          ],
+          "lose": [
+            21,
+            61,
+            42
+          ]
+        },
+        "a": {
+          "win": [
+            37,
+            24,
+            55
+          ],
+          "lose": [
+            73,
+            77,
+            43
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    },
+    {
+      "seed": 796135406,
+      "winner": "h",
+      "score": {
+        "h": 8,
+        "a": 5
+      },
+      "ball": "a",
+      "faceoffs": 6,
+      "initial": {
+        "h": [
+          8,
+          80,
+          64,
+          29,
+          14,
+          67
+        ],
+        "a": [
+          63,
+          62,
+          25,
+          81,
+          57,
+          22
+        ]
+      },
+      "played": {
+        "h": [
+          8,
+          29,
+          67,
+          64,
+          80,
+          14
+        ],
+        "a": [
+          22,
+          25,
+          62,
+          30,
+          81,
+          63
+        ]
+      },
+      "finalZones": {
+        "h": {
+          "win": [
+            8,
+            14
+          ],
+          "lose": [
+            29,
+            67,
+            64,
+            80
+          ]
+        },
+        "a": {
+          "win": [
+            25,
+            62,
+            30
+          ],
+          "lose": [
+            22,
+            81,
+            63
+          ]
+        }
+      },
+      "endGame": {
+        "h": 0,
+        "a": 0
+      }
+    }
+  ]
+}
