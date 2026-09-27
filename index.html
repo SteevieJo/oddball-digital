@@ -5,4 +5,38 @@
 <title>Oddball League</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"></head>
 <body><div id="rotateHint"><b>↻</b><strong>PASSE EN PAYSAGE</strong><span>Oddball est optimisé pour jouer horizontalement.</span></div><div id="app"></div>
 <script src="cards.js"></script><script src="app.js"></script>
-<script>if('serviceWorker'in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});</script></body></html>
+<script>
+if('serviceWorker' in navigator && location.protocol.startsWith('http')){
+  navigator.serviceWorker.register('./sw.js').then(reg=>{
+    let refreshing=false;
+    const showUpdate=worker=>{
+      if(!worker)return;
+      let bar=document.getElementById('oddballUpdate');
+      if(!bar){
+        bar=document.createElement('div');
+        bar.id='oddballUpdate';
+        bar.innerHTML='<span>Nouvelle version d\'Oddball disponible</span><button type="button">METTRE À JOUR</button>';
+        Object.assign(bar.style,{position:'fixed',left:'50%',bottom:'18px',transform:'translateX(-50%)',zIndex:'999999',display:'flex',gap:'14px',alignItems:'center',padding:'12px 16px',border:'1px solid rgba(255,255,255,.25)',borderRadius:'12px',background:'#080e15',color:'#fff',font:'700 13px system-ui,sans-serif',boxShadow:'0 10px 35px rgba(0,0,0,.55)'});
+        const btn=bar.querySelector('button');
+        Object.assign(btn.style,{border:'0',borderRadius:'8px',padding:'9px 12px',fontWeight:'900',cursor:'pointer'});
+        btn.onclick=()=>{btn.disabled=true;btn.textContent='MISE À JOUR…';worker.postMessage({type:'SKIP_WAITING'});};
+        document.body.appendChild(bar);
+      }
+    };
+    if(reg.waiting && navigator.serviceWorker.controller)showUpdate(reg.waiting);
+    reg.addEventListener('updatefound',()=>{
+      const worker=reg.installing;
+      if(!worker)return;
+      worker.addEventListener('statechange',()=>{
+        if(worker.state==='installed' && navigator.serviceWorker.controller)showUpdate(worker);
+      });
+    });
+    navigator.serviceWorker.addEventListener('controllerchange',()=>{
+      if(refreshing)return;
+      refreshing=true;
+      location.reload();
+    });
+    setInterval(()=>reg.update().catch(()=>{}),60000);
+  }).catch(()=>{});
+}
+</script></body></html>
