@@ -1449,3 +1449,62 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
  #rotateHint{position:fixed;z-index:999999;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:30px;text-align:center;background:radial-gradient(circle at 50% 40%,#172637,#070c12 70%);font-family:Arial,Helvetica,sans-serif}
  #rotateHint b{font-size:52px;color:#e9ad35}#rotateHint strong{font-size:22px}#rotateHint span{max-width:280px;color:#94a2b1;line-height:1.4}
 }
+
+
+/* ===== v1.55 — MOBILE UX PASS ===== */
+@media (max-width:950px) and (orientation:landscape){
+  html,body{width:100%;height:100%;overflow:hidden}
+  body{font-size:11px}
+  .shell{padding:3px 5px!important;height:100dvh!important}
+  .top{height:32px!important;min-height:32px!important;flex-basis:32px!important;padding:2px 7px!important;margin-bottom:2px!important}
+  .logo{font-size:17px!important}.tag{font-size:7px!important;padding:4px 6px!important}
+  .miniScore{padding:2px 5px!important}.miniScore b{font-size:13px!important}
+
+  /* Match: use the whole phone screen, with touch-sized interactive areas. */
+  .tabletop{height:calc(100dvh - 36px)!important;min-height:0!important;padding:1px 4px 3px!important;gap:1px!important;
+    grid-template-rows:34px minmax(64px,.8fr) minmax(105px,1.35fr) minmax(64px,.8fr) 92px!important}
+  .playerBoard{width:100%!important;grid-template-columns:minmax(0,1fr) 205px minmax(0,1fr)!important;gap:3px!important}
+  .playerMat{width:205px!important;height:54px!important;grid-template-columns:1fr 62px 1fr!important;border-radius:9px!important;border-width:2px!important}
+  .matLose,.matWin{font-size:25px!important}.matName{font-size:6px!important}
+  .ballDock{width:44px!important;height:44px!important}.gameBall{width:36px!important;height:36px!important;font-size:15px!important}
+  .benchSide{height:66px!important}.benchCards{height:60px!important;padding:0 2px!important}
+  .benchCards .card{width:44px!important;min-width:44px!important;height:60px!important;margin-left:-14px!important;border-radius:6px!important}
+  .benchCards .card .name{margin:19px -3px 1px!important;font-size:4px!important}
+  .faceoffLane{gap:7px!important}.duelSlot{width:70px!important;height:94px!important;border-radius:7px!important}
+  .duelSlot .card{width:68px!important;min-width:68px!important;height:92px!important}
+  .duelSlot .card .ability{display:none!important}.versus{width:28px!important;height:28px!important;font-size:8px!important}
+  .humanHandRow .hand{height:88px!important;min-height:88px!important;padding:2px 5px!important;justify-content:flex-start!important;overflow-x:auto!important;scrollbar-width:none}
+  .humanHandRow .hand::-webkit-scrollbar{display:none}
+  #myhand .card{width:66px!important;min-width:66px!important;height:86px!important;margin:0 -1px!important;transform:none!important}
+  #myhand .card .ability{font-size:4.8px!important;max-height:27px!important}
+  #myhand .card:active{transform:translateY(-5px) scale(1.05)!important}
+  .miniHand{height:31px!important}.miniHand .card{width:23px!important;min-width:23px!important;height:30px!important}
+  .matchFeed{transform:none!important;max-width:150px!important;font-size:8px!important}
+  .scoreTower{transform:none!important;scale:.72;transform-origin:top right!important}
+  .cardInspector.compactInspector{display:none!important}
+  .controls{opacity:.65!important;bottom:2px!important}.controls .btn{min-height:32px!important}
+
+  /* League: navigation becomes a compact rail instead of consuming a quarter of the screen. */
+  .leagueShell{grid-template-columns:112px minmax(0,1fr)!important;height:100dvh!important}
+  .leagueNav{width:112px!important;padding:9px 6px!important}
+  .leagueNav .leagueBrand{font-size:14px!important}
+  .leagueNav button{min-height:38px!important;font-size:8px!important;padding:7px 5px!important}
+  .leagueHome,.leagueSectionPage{padding:10px!important;overflow:auto!important;height:100dvh!important}
+  .leagueHomeTop h1{font-size:21px!important}.leagueHomeTop p,.sectionLead{font-size:10px!important}
+  .leagueHomeGrid{grid-template-columns:1fr 1fr!important;grid-template-areas:"club match" "stand stand" "calendar last" "others others"!important}
+  .leagueSectionCard{padding:10px!important}
+  .leagueSectionCard.franchiseGrid,.leagueSectionCard .franchiseGrid,.franchiseGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .fullCalendar{grid-template-columns:1fr!important}
+  .leagueRound{padding:8px 9px!important}
+  .allMatchRow{min-height:40px!important;grid-template-columns:minmax(90px,1fr) 58px minmax(90px,1fr)!important}
+  .fullStandings{overflow-x:auto!important;-webkit-overflow-scrolling:touch}
+  .leagueSectionPage .leagueStand.fullStandings .standHead,
+  .leagueSectionPage .leagueStand.fullStandings .standRow{min-width:650px!important;grid-template-columns:28px 34px 180px 190px 52px 52px 58px!important}
+  .packScene{min-height:100dvh!important;padding:8px!important}.recruitPack{width:150px!important;height:205px!important;margin:10px 0!important}
+  .boosterPage{overflow:auto!important;height:100dvh!important}
+  .boosterCards{display:flex!important;overflow-x:auto!important;flex-wrap:nowrap!important;padding-bottom:8px!important}
+  .boosterPick{min-width:150px!important}
+  .gameDecisionModal{padding:8px!important}.decisionBox{width:min(480px,94vw)!important;max-height:92dvh!important;padding:15px!important}
+  .decisionBox h2{font-size:20px!important}.decisionBox p{font-size:11px!important;margin-bottom:12px!important}
+  .decisionActions{gap:7px!important}.decisionActions button,.colorChoices button{min-height:42px!important}
+}
