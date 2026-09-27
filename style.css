@@ -1803,3 +1803,55 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .menuScreen,.mainMenu,.menuWrap{height:auto!important;min-height:100dvh!important;overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch!important}
   .menuCard{height:auto!important;min-height:0!important;max-height:none!important;margin-bottom:28px!important}
 }
+
+
+/* ===== v1.63 — PORTRAIT readability + collapsible feed + long-press inspect ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+  /* Cards outside the hand: keep the card's internal typography proportional. */
+  .benchCards .card{font-size:5px!important}
+  .benchCards .card .cardHead{min-height:16px!important}
+  .benchCards .card .name{font-size:5.2px!important;line-height:1!important}
+  .benchCards .card .stars{font-size:5px!important}
+  .benchCards .card .stats{gap:1px!important;padding:0 2px!important}
+  .benchCards .card .stats span{min-width:0!important;padding:1px!important}
+  .benchCards .card .stats small{font-size:3px!important}
+  .benchCards .card .stats b{font-size:8px!important;line-height:1!important}
+  .benchCards .card .timing{font-size:3.6px!important}
+  .benchCards .card .ability{display:none!important}
+
+  .duelSlot .card{font-size:8px!important}
+  .duelSlot .card .name{font-size:9px!important}
+  .duelSlot .card .stats small{font-size:5px!important}
+  .duelSlot .card .stats b{font-size:17px!important}
+  .duelSlot .card .timing{font-size:5px!important}
+  .duelSlot .card .abilityText{font-size:6.5px!important;line-height:1.08!important}
+
+  /* Feed becomes a tiny button; tap it to open the history. */
+  .liveLog{display:block!important;position:fixed!important;left:8px!important;top:76px!important;width:44px!important;height:44px!important;max-width:none!important;max-height:none!important;padding:0!important;border-radius:50%!important;overflow:hidden!important;z-index:5000!important;background:#09131df2!important;cursor:pointer!important}
+  .liveLog:before{content:"☰";display:grid;place-items:center;width:100%;height:100%;font-size:18px;font-weight:900;color:#fff}
+  .liveLog .liveLogTitle,.liveLog .liveLogSub,.liveLog .liveLogRows{display:none!important}
+  .liveLog.mobileOpen{left:10px!important;right:10px!important;top:70px!important;width:auto!important;height:min(62dvh,560px)!important;border-radius:14px!important;padding:14px!important;overflow:hidden!important;background:#071019fa!important}
+  .liveLog.mobileOpen:before{content:"✕";position:absolute;right:10px;top:7px;width:30px;height:30px;font-size:16px}
+  .liveLog.mobileOpen .liveLogTitle{display:block!important;font-size:15px!important;padding-right:35px!important}
+  .liveLog.mobileOpen .liveLogSub{display:block!important;font-size:8px!important}
+  .liveLog.mobileOpen .liveLogRows{display:block!important;height:calc(100% - 42px)!important;max-height:none!important;overflow-y:auto!important;margin-top:8px!important;font-size:10px!important;-webkit-overflow-scrolling:touch}
+  .liveLog.mobileOpen .liveLogRow p{font-size:10px!important;line-height:1.25!important}
+
+  /* Long press card inspector. */
+  .cardInspector.compactInspector.mobileInspect{
+    display:block!important;position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;max-width:none!important;
+    z-index:9000!important;background:rgba(2,6,10,.78)!important;padding:0!important;border:0!important
+  }
+  .cardInspector.mobileInspect .mobileInspectCard{
+    position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;
+    width:220px!important;height:314px!important
+  }
+  .cardInspector.mobileInspect .mobileInspectCard .card{width:220px!important;min-width:220px!important;height:314px!important;margin:0!important;transform:none!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .name{font-size:18px!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .stats b{font-size:32px!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .stats small{font-size:8px!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .ability{display:flex!important;max-height:none!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .timing{font-size:9px!important}
+  .cardInspector.mobileInspect .mobileInspectCard .card .abilityText{font-size:13px!important;line-height:1.18!important}
+  .cardInspector.mobileInspect .cardtip{display:none!important}
+}
