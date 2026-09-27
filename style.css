@@ -1872,3 +1872,37 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   /* v1.63 feed rule must win over the older mobile display:none. */
   .tabletop .liveLog{display:block!important}
 }
+
+
+/* ===== v1.65 — MOBILE CARD SCALE RESET ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+  /* Small bench cards: explicit complete layout, no inherited desktop absolute stats. */
+  .benchCards .card:not(.back){
+    width:46px!important;min-width:46px!important;height:64px!important;padding:2px!important;gap:1px!important;
+    grid-template-rows:16px 22px 1fr!important;overflow:hidden!important
+  }
+  .benchCards .card .impl,.benchCards .card .ability{display:none!important}
+  .benchCards .card .cardHead{height:16px!important;min-height:16px!important;overflow:hidden!important}
+  .benchCards .card .name{font-size:5px!important;line-height:1!important;padding:2px!important;margin:0!important}
+  .benchCards .card .stars{font-size:4px!important;line-height:1!important}
+  .benchCards .card .stats{
+    position:static!important;inset:auto!important;width:100%!important;height:22px!important;
+    display:grid!important;grid-template-columns:1fr 1fr!important;gap:1px!important;padding:0!important;margin:0!important
+  }
+  .benchCards .card .stats span{display:flex!important;min-width:0!important;height:22px!important;padding:0 1px!important;gap:0!important;align-items:center!important;justify-content:space-between!important}
+  .benchCards .card .stats small{font-size:3px!important;min-width:0!important}
+  .benchCards .card .stats b,.benchCards .card .stats span.stat3 b{font-size:7px!important;line-height:1!important;letter-spacing:-.5px!important}
+
+  /* Face-off cards get a clean mobile layout too. */
+  .duelSlot .card:not(.back){padding:5px!important;gap:3px!important;grid-template-rows:32px 42px 1fr!important}
+  .duelSlot .card .stats{position:static!important;inset:auto!important;width:100%!important;height:42px!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:3px!important;padding:0!important;margin:0!important}
+  .duelSlot .card .stats span{min-width:0!important;height:42px!important;padding:2px 3px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
+  .duelSlot .card .stats small{font-size:6px!important;min-width:0!important}
+  .duelSlot .card .stats b,.duelSlot .card .stats span.stat3 b{font-size:20px!important;line-height:1!important;letter-spacing:-1px!important}
+  .duelSlot .card .ability{display:flex!important;min-height:0!important;max-height:none!important;overflow:hidden!important}
+
+  /* Disable native text-selection/callout so a hold belongs to Oddball, not Android/Google. */
+  .tabletop .card,.tabletop .card *{-webkit-user-select:none!important;user-select:none!important;-webkit-touch-callout:none!important}
+  .tabletop .card{touch-action:manipulation}
+  .humanHandRow .hand{touch-action:pan-x}
+}
