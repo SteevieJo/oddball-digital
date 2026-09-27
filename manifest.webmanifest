@@ -1,10 +1,24 @@
 {
-  "name": "Oddball League",
+  "name": "Oddball Digital",
   "short_name": "Oddball",
-  "start_url": "./index.html",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "fullscreen"
+  ],
   "background_color": "#080e15",
   "theme_color": "#080e15",
   "orientation": "landscape",
-  "description": "Oddball Digital League"
+  "description": "Oddball Digital League",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
