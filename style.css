@@ -1744,3 +1744,53 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .controls .btn{font-size:5px!important;min-height:20px!important;padding:2px 3px!important}
   .cardInspector.compactInspector{display:none!important}
 }
+
+
+/* ===== v1.62 — PORTRAIT COMPACT COURT ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+  .tabletop{
+    grid-template-columns:42px minmax(0,1fr) 42px!important;
+    grid-template-rows:54px 82px minmax(235px,1fr) 82px 250px!important;
+    padding:env(safe-area-inset-top,2px) 3px env(safe-area-inset-bottom,2px)!important
+  }
+  .arenaBrand{transform:scale(.34)!important;left:5px!important;top:4px!important}
+  .matchFeed{display:none!important}
+  .controls{opacity:.07!important}
+  .scoreTower{right:-5px!important;transform:scale(.42)!important;transform-origin:center right!important}
+  .mainScoreboard{right:-5px!important;transform:scale(.52)!important;transform-origin:top right!important}
+
+  .opponentHandRow{height:48px!important}
+  .miniHand{height:34px!important}.miniHand .card.back{width:25px!important;min-width:25px!important;height:33px!important}
+
+  .playerBoard{grid-template-columns:minmax(82px,1fr) 132px minmax(82px,1fr)!important;gap:2px!important}
+  .playerMat{width:132px!important;max-width:132px!important;height:48px!important;grid-template-columns:1fr 42px 1fr!important}
+  .ballDock{width:34px!important;height:34px!important}.gameBall{width:29px!important;height:29px!important}
+  .matLose,.matWin{font-size:20px!important}
+  .benchSide{height:76px!important}
+  .benchCards{height:63px!important}
+  .benchCards .card{width:45px!important;min-width:45px!important;height:61px!important;margin-right:-4px!important}
+  .benchTag{font-size:6px!important}
+
+  .faceoffLane{
+    padding:28px 22px 20px!important;
+    grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr)!important;
+    gap:3px!important
+  }
+  .faceoffCaption{top:7px!important;font-size:12px!important;letter-spacing:2px!important}
+  .duelSlot{width:112px!important;height:158px!important}
+  .duelSlot .card{width:110px!important;min-width:110px!important;height:156px!important}
+  .duelSlot .card .name{font-size:10px!important}
+  .duelSlot .card .ability{display:flex!important;font-size:7px!important;line-height:1.1!important;max-height:58px!important}
+  .duelSlot .card .stats b{font-size:19px!important}
+  .versus{width:34px!important;height:34px!important}
+
+  .humanHandRow{height:248px!important;padding-top:4px!important;background:linear-gradient(180deg,transparent,#05090de8 14%,#05090df8)!important}
+  .humanHandRow .hand{height:224px!important;min-height:224px!important;padding:2px 12px 8px!important;gap:8px!important}
+  #myhand .card{width:138px!important;min-width:138px!important;height:198px!important}
+  #myhand .card .name{font-size:12px!important}
+  #myhand .card .ability{font-size:8px!important;max-height:72px!important}
+  #myhand .card .stats b{font-size:21px!important}
+
+  .deckPile,.discardPile{width:34px!important;height:47px!important;bottom:254px!important}
+  .deckPile{left:2px!important}.discardPile{right:2px!important}
+}
