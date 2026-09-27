@@ -1638,3 +1638,45 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .controls .btn{font-size:6px!important;min-height:22px!important;padding:2px 4px!important}
   .cardInspector.compactInspector{display:none!important}
 }
+
+
+/* ===== v1.59 — PHONE MATCH proportion pass ===== */
+@media (orientation:landscape) and (max-height:600px) and (pointer:coarse){
+  .tabletop{
+    grid-template-columns:104px minmax(0,1fr) 78px!important;
+    grid-template-rows:50px 58px minmax(82px,1fr) 58px 118px!important;
+    padding:3px 7px!important
+  }
+  .arenaBrand{left:8px!important;top:4px!important;transform:scale(.43)!important}
+  .matchFeed{left:7px!important;top:126px!important;width:94px!important;max-width:94px!important;height:70px!important;max-height:70px!important;padding:5px!important}
+  .deckPile,.discardPile{width:42px!important;height:57px!important;bottom:112px!important}
+  .deckPile{left:9px!important}.discardPile{right:9px!important}
+
+  .opponentHandRow{grid-row:1!important;height:42px!important}
+  .playerBoard{grid-template-columns:minmax(72px,1fr) 180px minmax(72px,1fr)!important}
+  .opponentBoard{grid-row:2!important}
+  .humanBoard{grid-row:4!important}
+  .playerMat{width:180px!important;max-width:180px!important;height:45px!important;grid-template-columns:1fr 48px 1fr!important;border-radius:8px!important}
+  .matLose,.matWin{font-size:20px!important}
+  .ballDock{width:35px!important;height:35px!important}.gameBall{width:30px!important;height:30px!important;font-size:11px!important}
+  .benchSide{height:52px!important}
+  .benchCards{height:50px!important}
+  .benchCards .card{width:36px!important;min-width:36px!important;height:49px!important;margin-left:-11px!important}
+  .benchTag{font-size:6px!important}
+
+  .faceoffLane{grid-row:3!important;gap:4px!important}
+  .faceoffCaption{font-size:9px!important;top:0!important}
+  .duelSlot{width:60px!important;height:80px!important}.duelSlot .card{width:58px!important;min-width:58px!important;height:78px!important}
+  .versus{width:27px!important;height:27px!important;font-size:7px!important}
+  .mainScoreboard{right:-2px!important;width:52px!important;min-width:52px!important;transform:scale(.62)!important}
+
+  .humanHandRow{grid-row:5!important;height:116px!important;overflow:visible!important}
+  .humanHandRow .hand{height:106px!important;min-height:106px!important;padding:0 2px 2px!important;gap:4px!important;justify-content:center!important;overflow-x:auto!important;overflow-y:visible!important}
+  #myhand .card{width:72px!important;min-width:72px!important;height:101px!important;margin:0!important;transform:none!important}
+  #myhand .card .name{font-size:7px!important}
+  #myhand .card .ability{font-size:5px!important;line-height:1.08!important;max-height:33px!important}
+  #myhand .card .stats b{font-size:14px!important}
+
+  .scoreTower{right:55px!important;transform:scale(.66)!important;transform-origin:center right!important}
+  .controls{opacity:.08!important}
+}
