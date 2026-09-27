@@ -1855,3 +1855,20 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .cardInspector.mobileInspect .mobileInspectCard .card .abilityText{font-size:13px!important;line-height:1.18!important}
   .cardInspector.mobileInspect .cardtip{display:none!important}
 }
+
+
+/* ===== v1.64 — MOBILE PAGE SCROLL + FEED OVERRIDE ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+  /* Non-match pages must own their vertical scroll. */
+  body:not(:has(.tabletop)){height:auto!important;min-height:100dvh!important;overflow-y:auto!important;overflow-x:hidden!important}
+  #app:not(:has(.tabletop)){height:auto!important;min-height:100dvh!important;overflow:visible!important}
+  .labShell,.collectionPage{
+    position:relative!important;height:auto!important;min-height:100dvh!important;max-height:none!important;
+    overflow-y:visible!important;overflow-x:hidden!important;padding-bottom:80px!important
+  }
+  .labShell .labGrid,.collectionPage .labGrid{height:auto!important;max-height:none!important;overflow:visible!important}
+  .collectionSticky{position:sticky!important;top:0!important}
+
+  /* v1.63 feed rule must win over the older mobile display:none. */
+  .tabletop .liveLog{display:block!important}
+}
