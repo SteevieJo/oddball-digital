@@ -1543,3 +1543,51 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .controls{top:4px!important;right:4px!important;opacity:.18!important}
   .controls .btn{font-size:7px!important;padding:4px 5px!important;min-height:28px!important}
 }
+
+
+/* ===== v1.56 — PHONE MATCH: dedicated 5-band arena ===== */
+@media (max-width:950px) and (orientation:landscape){
+  .shell{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;padding:0!important;overflow:hidden!important}
+  .tabletop{
+    position:absolute!important;inset:0!important;width:100vw!important;height:100dvh!important;
+    display:grid!important;
+    grid-template-columns:88px minmax(0,1fr) 64px!important;
+    grid-template-rows:74px 64px minmax(78px,1fr) 64px 100px!important;
+    padding:4px 5px!important;gap:0!important;box-sizing:border-box!important;overflow:hidden!important
+  }
+  .arenaBrand{left:12px!important;top:7px!important;transform:scale(.58)!important;transform-origin:top left!important}
+  .arenaSlogan{display:none!important}
+  .matchFeed{left:8px!important;top:82px!important;width:78px!important;max-width:78px!important;max-height:62px!important;padding:5px!important;font-size:6px!important;overflow:hidden!important}
+  .deckPile,.discardPile{width:48px!important;height:64px!important;bottom:104px!important;z-index:18!important}
+  .deckPile{left:7px!important}.discardPile{right:7px!important}
+  .deckPile b,.discardPile b{font-size:13px!important}.deckPile span,.discardPile span{font-size:5.5px!important}.deckPile strong,.discardPile strong{font-size:11px!important}
+
+  .opponentHandRow{grid-column:2!important;grid-row:1!important;align-self:end!important;justify-self:center!important;height:40px!important;min-height:0!important;position:relative!important}
+  .opponentHandRow .compactLabel{font-size:6px!important;margin:0!important}
+  .miniHand{height:29px!important}.miniHand .card{width:21px!important;min-width:21px!important;height:28px!important}
+
+  .playerBoard{grid-column:2!important;width:100%!important;max-width:none!important;min-width:0!important;margin:0!important;
+    grid-template-columns:minmax(55px,1fr) minmax(170px,230px) minmax(55px,1fr)!important;gap:2px!important}
+  .opponentBoard{grid-row:2!important;align-self:center!important}
+  .humanBoard{grid-row:4!important;align-self:center!important}
+  .playerMat{width:100%!important;max-width:230px!important;height:54px!important;grid-template-columns:1fr 58px 1fr!important}
+  .benchSide{height:60px!important;min-width:0!important;overflow:visible!important}
+  .benchCards{height:56px!important;min-width:0!important;max-width:100%!important;overflow:visible!important}
+  .benchCards .card{width:40px!important;min-width:40px!important;height:55px!important;margin-left:-13px!important}
+
+  .faceoffLane{grid-column:2!important;grid-row:3!important;align-self:center!important;justify-self:center!important;width:100%!important;height:100%!important;min-height:0!important;gap:5px!important}
+  .duelSlot{width:54px!important;height:72px!important}.duelSlot .card{width:52px!important;min-width:52px!important;height:70px!important}
+  .versus{width:25px!important;height:25px!important;font-size:7px!important}
+  .faceoffCaption{font-size:7px!important}
+  .mainScoreboard{right:0!important;width:58px!important;min-width:58px!important;transform:scale(.72)!important;transform-origin:center right!important}
+
+  .humanHandRow{grid-column:2!important;grid-row:5!important;align-self:end!important;width:100%!important;height:98px!important;min-height:0!important;overflow:hidden!important}
+  .humanHandRow .compactLabel{font-size:6px!important;margin:0!important}
+  .humanHandRow .hand{width:100%!important;height:88px!important;min-height:88px!important;padding:1px 2px!important;gap:2px!important;justify-content:center!important;overflow-x:auto!important;overflow-y:hidden!important}
+  #myhand .card{width:62px!important;min-width:62px!important;height:84px!important;margin:0!important;transform:none!important}
+  #myhand .card .ability{font-size:4.5px!important;line-height:1.08!important;max-height:26px!important}
+
+  .controls{top:4px!important;right:5px!important;bottom:auto!important;z-index:1000!important;opacity:.16!important}
+  .controls .btn{min-height:24px!important;font-size:6px!important;padding:3px 4px!important}
+  .cardInspector.compactInspector{display:none!important}
+}
