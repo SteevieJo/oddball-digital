@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#080e15"><meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Oddball League</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=162"></head>
+<title>Oddball League</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=1621"></head>
 <body><div id="rotateHint"><b>↻</b><strong>PASSE EN PAYSAGE</strong><span>Oddball est optimisé pour jouer horizontalement.</span></div><div id="app"></div>
-<script src="cards.js?v=162"></script><script src="app.js?v=162"></script>
+<script src="cards.js?v=1621"></script><script src="app.js?v=1621"></script>
 <script>
 if('serviceWorker' in navigator && location.protocol.startsWith('http')){
   navigator.serviceWorker.register('./sw.js').then(reg=>{
@@ -36,7 +36,7 @@ if('serviceWorker' in navigator && location.protocol.startsWith('http')){
       refreshing=true;
       location.reload();
     });
-    setInterval(()=>reg.update().catch(()=>{}),60000);
+    reg.update().catch(()=>{});\n    setInterval(()=>reg.update().catch(()=>{}),15000);
   }).catch(()=>{});
 }
 </script></body></html>
