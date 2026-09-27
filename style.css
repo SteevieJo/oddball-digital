@@ -1508,3 +1508,38 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .decisionBox h2{font-size:20px!important}.decisionBox p{font-size:11px!important;margin-bottom:12px!important}
   .decisionActions{gap:7px!important}.decisionActions button,.colorChoices button{min-height:42px!important}
 }
+
+
+/* ===== v1.55.1 — MOBILE MATCH LAYOUT HOTFIX =====
+   Legacy desktop court uses a 3-column grid with a hard 760px centre minimum.
+   On phones that made the court wider than the viewport and clipped the player half.
+*/
+@media (max-width:950px) and (orientation:landscape){
+  .shell{width:100vw!important;max-width:100vw!important;overflow:hidden!important}
+  .tabletop{
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    grid-template-columns:118px minmax(0,1fr) 76px!important;
+    overflow:hidden!important
+  }
+  .courtCenter,.centerCourt,.gameCenter{min-width:0!important;width:100%!important;overflow:visible!important}
+  .playerBoard{
+    width:100%!important;max-width:100%!important;min-width:0!important;
+    grid-template-columns:minmax(72px,1fr) minmax(180px,42vw) minmax(72px,1fr)!important;
+    gap:2px!important
+  }
+  .playerMat{width:100%!important;max-width:230px!important;justify-self:center!important}
+  .benchSide{min-width:0!important;overflow:hidden!important}
+  .benchCards{min-width:0!important;max-width:100%!important}
+  .deckPile,.discardPile{
+    width:62px!important;height:84px!important;bottom:8px!important;border-width:2px!important;border-radius:7px!important
+  }
+  .deckPile{left:8px!important}.discardPile{right:6px!important}
+  .deckPile:before,.discardPile:before{inset:-5px 3px 4px -3px!important}
+  .deckPile b,.discardPile b{font-size:17px!important}
+  .deckPile span,.discardPile span{font-size:7px!important}
+  .deckPile strong,.discardPile strong{font-size:14px!important}
+  .matchFeed{width:108px!important;max-width:108px!important;font-size:7px!important}
+  .mainScoreboard,.scoreTower{max-width:72px!important}
+  .controls{top:4px!important;right:4px!important;opacity:.18!important}
+  .controls .btn{font-size:7px!important;padding:4px 5px!important;min-height:28px!important}
+}
