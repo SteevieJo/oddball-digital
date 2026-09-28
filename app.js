@@ -876,7 +876,7 @@ function renderLeagueRoster(){let t=leagueTeam(S.league.viewTeam);app.innerHTML=
 function renderLeaguePrep(){let L=S.league,t=leagueTeam('grizzlies'),opp=leagueTeam(leagueCurrentOpponent());app.innerHTML=`<div class="leaguePage prepPage"><div class=leagueTop><div><div class=logo>ODDBALL</div><div class=leaguePill>J${L.day+1} · ${opp.name}</div></div><button class=btn id=prepBack>RETOUR</button></div><div class=prepHead><div><small>COMPOSITION</small><h1>Choisis tes 6 titulaires</h1><p>L'adversaire voit ton roster complet, mais pas cette sélection.</p></div><div class=starterCount>${L.selected.length}<span>/6</span></div></div><div class=leagueCardGrid>${t.roster.map(id=>`<div class="starterCard ${L.selected.includes(id)?'picked':''}" data-id=${id}>${card(cp(ALL.find(c=>c.id===id)))}<span>${L.selected.includes(id)?'TITULAIRE':'SÉLECTIONNER'}</span></div>`).join('')}</div><div class=boosterBar><button class=btn id=leagueReuse ${L.lastLineup?.length===6?'':'disabled'}>REPRENDRE LES 6 DU MATCH PRÉCÉDENT</button><button class=menuPrimary id=leagueLaunch ${L.selected.length===6?'':'disabled'}>LANCER LE MATCH</button></div></div>`;document.querySelector('#prepBack').onclick=leagueBack;document.querySelectorAll('.starterCard').forEach(e=>e.onclick=()=>leagueToggleStarter(+e.dataset.id));document.querySelector('#leagueReuse').onclick=leagueReuseLastLineup;document.querySelector('#leagueLaunch').onclick=launchLeagueMatch}
 
 function renderMenu(){
- app.innerHTML=`<main class=mainMenu><div class=menuGlow></div><section class=menuCard><div class=menuLogo>ODDBALL</div><div class=menuSub>PLAY · ATTACK · SCORE</div><div class=menuVersion>Digital v1.70 · PORTRAIT MOBILE · 98 cartes</div><div class=menuActions><button class=menuPrimary id=menuLeague>LEAGUE <span class=newBadge>NEW</span></button><button class=menuSecondary id=menuPlay>QUICK MATCH</button><button class=menuSecondary id=menuLab>LABO</button><button class=menuSecondary id=menuCollection>COLLECTION</button><button class="menuSecondary devMenuBtn" id=menuStats>STATS <span>DEV</span></button></div><p class=menuHint>League construit ton roster au fil d’une saison. Quick Match conserve la draft Oddball classique.</p></section></main>`;
+ app.innerHTML=`<main class=mainMenu><div class=menuGlow></div><section class=menuCard><div class=menuLogo>ODDBALL</div><div class=menuSub>PLAY · ATTACK · SCORE</div><div class=menuVersion>Digital v1.71 · MOBILE UI · 98 cartes</div><div class=menuActions><button class=menuPrimary id=menuLeague>LEAGUE <span class=newBadge>NEW</span></button><button class=menuSecondary id=menuPlay>QUICK MATCH</button><button class=menuSecondary id=menuLab>LABO</button><button class=menuSecondary id=menuCollection>COLLECTION</button><button class="menuSecondary devMenuBtn" id=menuStats>STATS <span>DEV</span></button></div><p class=menuHint>League construit ton roster au fil d’une saison. Quick Match conserve la draft Oddball classique.</p></section></main>`;
  document.querySelector('#menuLeague').onclick=openLeague;document.querySelector('#menuPlay').onclick=startDraft;document.querySelector('#menuLab').onclick=openLab;document.querySelector('#menuCollection').onclick=openCollection;document.querySelector('#menuStats').onclick=openStats;
 }
 function renderCollection(){
@@ -896,7 +896,45 @@ function renderCollection(){
  document.querySelector('#collectionPrev').onclick=()=>{if(S.collectionPage>0){S.collectionPage--;render()}};
  document.querySelector('#collectionNext').onclick=()=>{if(S.collectionPage<pages-1){S.collectionPage++;render()}};
 }
+
+function mobileMatchUI(){
+ const portrait=matchMedia('(orientation:portrait) and (pointer:coarse) and (max-width:700px)').matches;
+ if(!portrait)return false;
+ const tile=(c,o,zone='')=>{
+  if(!c)return '<div class="mEmpty">—</div>';
+  if(c.down)return `<div class="mTile mDown" data-u="${c.uid}"><b>ODDBALL</b><span>FACE CACHÉE</span></div>`;
+  let d=dyn(c,o,'bench'),cl=c.color==='WILD'?'WILD':c.color;
+  return `<div class="mTile ${cl}" data-u="${c.uid}"><div class=mTileName>${c.name}</div><div class=mTileStars>${'★'.repeat(c.stars||0)||'—'}</div><div class=mTileStats><span>POW <b>${d.p}</b></span><span>SPD <b>${d.s}</b></span></div></div>`;
+ };
+ const zone=(label,cards,o)=>`<section class=mZone><div class=mZoneHead>${label}<b>${cards.length}</b></div><div class=mZoneCards>${cards.length?cards.map(c=>tile(c,o)).join(''):'<div class=mZoneEmpty>VIDE</div>'}</div></section>`;
+ const duel=(c,o,label)=>c?`<div class=mDuel data-u="${c.uid}">${card(c,false,false,'faceoff')}</div>`:`<div class=mDuelEmpty>${label}</div>`;
+ app.innerHTML=`<div class="mMatch">
+   <header class=mMatchTop><button id=mMenu>☰</button><div><b>ODDBALL</b><span>${S.ball==='h'?'● TA BALLE':'● BALLE RIVALE'}</span></div><div class=mScore><span>RIVAL <b>${S.as}</b></span><i>—</i><span>TOI <b>${S.hs}</b></span></div><button id=mFeed>≡</button></header>
+   <div class=mOpponent><div class=mSideTitle><b>RIVAL</b><span>MAIN · ${S.a.length}</span></div><div class=mZones>${zone('✓ WINZONE',S.aw,'a')}${zone('✕ LOSEZONE',S.al,'a')}</div></div>
+   <div class=mFaceoff><div class=mFaceTitle>FACE-OFF ${faceoffDemandBanner()}</div><div class=mDuelRow>${duel(S.af,'a','RIVAL')}<div class=mVs>${S.phase==='end'?(S.hs>S.as?'WIN':S.hs<S.as?'LOSE':'DRAW'):(S.phase==='scoring'?'SCORE':'VS')}</div>${duel(S.hf,'h','TOI')}</div></div>
+   <div class=mHuman><div class=mSideTitle><b>TON BENCH</b><span>PIOCHE ${S.deck.length} · DÉFAUSSE ${S.disc?.length||0}</span></div><div class=mZones>${zone('✕ LOSEZONE',S.hl,'h')}${zone('✓ WINZONE',S.hw,'h')}</div></div>
+   <div class=mHandWrap><div class=mHandHead><b>TA MAIN</b><span>${S.h.length} CARTE${S.h.length>1?'S':''} · TOUCHE POUR VOIR</span></div><div class=mHand id=myhand>${S.h.map(c=>card(c,false,false,'hand')).join('')}</div></div>
+   <div id=mPreview class=mPreview></div>
+   <div id=mFeedPanel class=mFeedPanel><div class=mFeedHead><b>FIL DU MATCH</b><button id=mFeedClose>✕</button></div><div class=mFeedRows>${(S.log||[]).slice().reverse().map(x=>`<p>${x}</p>`).join('')||'<p>Aucune interaction.</p>'}</div></div>
+   <div id=visualFx class=visualFx></div>${targetPrompt()}${finalPanel()}<div id=eventToast class=eventToast></div>
+ </div>`;
+ document.querySelector('#mMenu').onclick=goMenu;
+ const fp=document.querySelector('#mFeedPanel');document.querySelector('#mFeed').onclick=()=>fp.classList.add('open');document.querySelector('#mFeedClose').onclick=()=>fp.classList.remove('open');
+ let en=document.querySelector('#endNew');if(en)en.onclick=S.leagueActive?(S.league?.current?.playoff?leagueFinishPlayoffMatch:leagueFinishPlayedMatch):startDraft;let sf=document.querySelector('#skipFinal');if(sf)sf.onclick=skipFinal;
+ bindTargetMode();setTimeout(playVisualQueue,20);setTimeout(flushCardFx,30);
+ if(!targetMode){
+  const visible=[...S.h,...S.hw,...S.hl,...S.aw,...S.al,...(S.hf?[S.hf]:[]),...(S.af?[S.af]:[])];
+  const preview=c=>{
+   if(!c||c.down)return;let mine=S.h.some(x=>x.uid===c.uid);
+   let box=document.querySelector('#mPreview');box.innerHTML=`<div class=mPreviewShade></div><div class=mPreviewBox><button class=mPreviewClose>✕</button><div class=mPreviewCard>${card(c,false,false,'inspect')}</div><div class=mPreviewInfo><b>${c.name}</b><span>${abilityCategory(c)}${triggerLabel(c)?' · '+triggerLabel(c):''}</span></div>${mine?`<button class=mPlayCard data-u="${c.uid}">JOUER CETTE CARTE</button>`:''}</div>`;box.classList.add('open');
+   box.querySelector('.mPreviewClose').onclick=()=>box.classList.remove('open');box.querySelector('.mPreviewShade').onclick=()=>box.classList.remove('open');let play=box.querySelector('.mPlayCard');if(play)play.onclick=()=>{box.classList.remove('open');hplay(play.dataset.u)};
+  };
+  document.querySelectorAll('.mMatch [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(visible.find(c=>c.uid===el.dataset.u))};el.oncontextmenu=e=>e.preventDefault()});
+ }
+ return true;
+}
 function render(){if(S.phase==='menu'){renderMenu();return}if(S.phase==='leagueStart'){renderLeagueStart();return}if(S.phase==='leagueDraft'){renderLeagueDraft();return}if(S.phase==='leagueHub'){renderLeagueHub();return}if(S.phase==='leagueRosters'){renderLeagueRosters();return}if(S.phase==='leagueStandings'){renderLeagueStandings();return}if(S.phase==='leagueCalendar'){renderLeagueCalendar();return}if(S.phase==='leagueRoster'){renderLeagueRoster();return}if(S.phase==='leaguePrep'){renderLeaguePrep();return}if(S.phase==='leagueResults'){renderLeagueResults();return}if(S.phase==='leagueRecruit'){renderLeagueRecruit();return}if(S.phase==='leagueSeasonEnd'){renderLeagueSeasonEnd();return}if(S.phase==='leaguePlayoffs'){renderLeaguePlayoffs();return}if(S.phase==='leaguePlayoffPrep'){renderLeaguePlayoffPrep();return}if(S.phase==='leaguePlayoffResult'){renderLeaguePlayoffResult();return}if(S.phase==='leagueChampion'){renderLeagueChampion();return}if(S.phase==='stats'){renderStats();return}if(S.phase==='collection'){renderCollection();return}if(S.phase==='lab'){renderLab();return}if(S.phase==='d1'||S.phase==='d2'){let pending=S.phase==='d2'?S.pool.filter(c=>S.sel.has(c.uid)):[],draftHand=[...S.h,...pending];app.innerHTML=`<div class="shell draftShell"><div class=top><div class=logo>ODDBALL</div><div class=tag>Digital v1.45 · PLAYOFF UX</div></div><div class="panel draftPanel"><h2>${S.phase==='d1'?'Choisis 1 carte':'Choisis 2 cartes reçues'}</h2><p>Draft ${S.round+1}/2 · ${S.h.length} carte${S.h.length>1?'s':''} confirmée${S.h.length>1?'s':''}${pending.length?` · ${pending.length} sélectionnée${pending.length>1?'s':''} en attente`:''}</p><div class=choices>${S.pool.map(c=>card(c,false,S.sel.has(c.uid))).join('')}</div>${S.phase==='d2'?'<br><button class=btn id=ok>Confirmer</button>':''}</div><div class=draftHandDock><div class=draftHandTitle>TA MAIN · SYNERGIES <span>${draftHand.length}/6</span></div><div class=draftHand>${draftHand.length?draftHand.map(c=>`<div class="draftHandCard ${pending.includes(c)?'pendingPick':''}">${card(c)}</div>`).join(''):'<div class=draftHandEmpty>Tes cartes choisies apparaîtront ici au fur et à mesure.</div>'}</div></div></div>`;document.querySelectorAll('.choices .card').forEach(e=>e.onclick=()=>S.phase==='d1'?pick1(e.dataset.u):pick2(e.dataset.u));if(document.querySelector('#ok'))document.querySelector('#ok').onclick=conf;return}
+ if(mobileMatchUI())return;
  app.innerHTML=`<div class=shell><div class=top><div class=logo>ODDBALL</div><div class=tag>v1.45 · PLAYOFF UX · 98 CARTES</div></div>
  <div class=tabletop>
  <div class=arenaBrand>ODDBALL<span>PLAY · ATTACK · SCORE</span></div><div class=arenaSlogan>GOOD PLAYERS<br>BETTER PEOPLE</div><div class=deckPile><b>♛</b><span>PIOCHE</span><strong>${S.deck.length}</strong></div><div class=discardPile><b>⌫</b><span>DÉFAUSSE</span><strong>${S.disc?.length||0}</strong></div>
