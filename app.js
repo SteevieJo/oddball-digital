@@ -42,14 +42,14 @@ function flushCardFx(){
  if(!S.cardFx?.length)return;
  let keep=[];
  for(let fx of S.cardFx){
-  let els=[...document.querySelectorAll(`.tabletop .card[data-u="${fx.uid}"]`)];
+  let els=[...document.querySelectorAll(`.tabletop .card[data-u="${fx.uid}"],.m2Match .card[data-u="${fx.uid}"]`)];
   if(!els.length){keep.push(fx);continue}
   for(let el of els){let n=document.createElement('div');n.className=`cardActionFx ${fx.type}`;n.textContent=fx.text;el.appendChild(n);setTimeout(()=>n.remove(),1150)}
  }
  S.cardFx=keep;
 }
 function boardFx(text,type='effect'){
- let lane=document.querySelector('.faceoffLane');if(!lane)return;
+ let lane=document.querySelector('.faceoffLane,.m2Face');if(!lane)return;
  let n=document.createElement('div');n.className=`boardActionFx ${type}`;n.textContent=text;lane.appendChild(n);setTimeout(()=>n.remove(),1250);
 }
 function showEvent(title,text){
@@ -64,8 +64,9 @@ function showEvent(title,text){
 let ballAnimTimer=null;
 function animatePossession(from,to){
  clearTimeout(ballAnimTimer);
- const fromDock=document.querySelector(from==='h'?'.humanMat .ballDock':'.opponentMat .ballDock');
- const toDock=document.querySelector(to==='h'?'.humanMat .ballDock':'.opponentMat .ballDock');
+ const mobile=document.querySelector('.m2Match');
+ const fromDock=mobile?document.querySelector('.m2Score'):document.querySelector(from==='h'?'.humanMat .ballDock':'.opponentMat .ballDock');
+ const toDock=mobile?document.querySelector('.m2Score'):document.querySelector(to==='h'?'.humanMat .ballDock':'.opponentMat .ballDock');
  if(!toDock)return;
  const landed=toDock.querySelector('.gameBall');
  if(from===to){
@@ -85,7 +86,7 @@ function animatePossession(from,to){
 // v1.35 — RULES AUDIT: engine hardening after a full 53-card implementation review.
 // v1.34 — MATCH PRESENTATION: Face-Off entries, impact, result and travel to Bench.
 function animateFaceoffEntry(side,role='attack'){
- requestAnimationFrame(()=>{let el=document.querySelector(`${side==='h'?'.humanSlot':'.rivalSlot'} .card`);if(!el)return;el.classList.remove('faceoffEnterHuman','faceoffEnterRival','faceoffDefense');void el.offsetWidth;el.classList.add(side==='h'?'faceoffEnterHuman':'faceoffEnterRival');if(role==='defense')el.classList.add('faceoffDefense');setTimeout(()=>el.classList.remove('faceoffEnterHuman','faceoffEnterRival','faceoffDefense'),700)});
+ requestAnimationFrame(()=>{let el=document.querySelector(document.querySelector('.m2Match')?`${side==='h'?'.m2DuelCard:last-child':'.m2DuelCard:first-child'} .card`:`${side==='h'?'.humanSlot':'.rivalSlot'} .card`);if(!el)return;el.classList.remove('faceoffEnterHuman','faceoffEnterRival','faceoffDefense');void el.offsetWidth;el.classList.add(side==='h'?'faceoffEnterHuman':'faceoffEnterRival');if(role==='defense')el.classList.add('faceoffDefense');setTimeout(()=>el.classList.remove('faceoffEnterHuman','faceoffEnterRival','faceoffDefense'),700)});
 }
 function duelImpact(){let lane=document.querySelector('.faceoffLane');if(!lane)return;lane.classList.remove('duelImpact');void lane.offsetWidth;lane.classList.add('duelImpact');setTimeout(()=>lane.classList.remove('duelImpact'),650)}
 function captureDuelCards(){let out={};for(let [side,sel] of [['h','.humanSlot .card'],['a','.rivalSlot .card']]){let el=document.querySelector(sel);if(el){let r=el.getBoundingClientRect();out[side]={node:el.cloneNode(true),rect:r,uid:el.dataset.u}}}return out}
@@ -915,7 +916,10 @@ function mobileMatchUI(){
   <header class=m2Top><button id=mMenu>☰</button><div class=m2Brand><b>ODDBALL</b><span>${S.ball==='h'?'● TA BALLE':'● BALLE RIVALE'}</span></div><div class=m2Score><span>RIVAL <b>${S.as}</b></span><i>–</i><span>TOI <b>${S.hs}</b></span></div></header>
   <main class=m2Stage>
    <div class=m2StageHead><span>${title}</span><button id=mQuick>•••</button></div>
-   <div class=m2BenchStrip>${summary('a',S.aw,S.al,'a')}${summary('h',S.hw,S.hl,'h')}</div>
+   <div class=m2LiveBenches>
+ <div class=m2LiveRow><b>RIVAL</b><button data-openbench="a"><span>✓ WIN</span><i>${S.aw.length}</i><div>${S.aw.slice(-4).map(c=>tile(c,'a')).join('')||'<small>VIDE</small>'}</div></button><button data-openbench="a"><span>✕ LOSE</span><i>${S.al.length}</i><div>${S.al.slice(-4).map(c=>tile(c,'a')).join('')||'<small>VIDE</small>'}</div></button></div>
+ <div class=m2LiveRow><b>TOI</b><button data-openbench="h"><span>✕ LOSE</span><i>${S.hl.length}</i><div>${S.hl.slice(-4).map(c=>tile(c,'h')).join('')||'<small>VIDE</small>'}</div></button><button data-openbench="h"><span>✓ WIN</span><i>${S.hw.length}</i><div>${S.hw.slice(-4).map(c=>tile(c,'h')).join('')||'<small>VIDE</small>'}</div></button></div>
+</div>
    ${inFaceoff?`<section class=m2Face><div class=m2FaceLabel>FACE-OFF ${faceoffDemandBanner()}</div><div class=m2Duel>${duelCard(S.af,'a','RIVAL')}<div class=m2Vs>${S.phase==='end'?(S.hs>S.as?'FIN':S.hs<S.as?'FIN':'FIN'):(S.phase==='scoring'?'SCORE':'VS')}</div>${duelCard(S.hf,'h','TOI')}</div></section>`:`<section class=m2TurnHero><div class=m2Ball>${S.ball==='h'?'●':'○'}</div><h1>${S.ball==='h'?'CHOISIS TON ATHLÈTE':'LE RIVAL PRÉPARE SON ATTAQUE'}</h1><p>${S.ball==='h'?'Touche une carte pour la lire puis la jouer.':'Ta main reste prête pendant que le rival joue.'}</p></section>`}
   </main>
   <section class=m2HandArea><div class=m2HandHead><b>TA MAIN</b><span>${S.h.length} CARTE${S.h.length!==1?'S':''}</span></div><div class=m2Hand id=myhand>${S.h.map(c=>`<div class=m2HandCard data-u="${c.uid}">${card(c,false,false,'hand')}</div>`).join('')}</div></section>
@@ -933,7 +937,10 @@ function mobileMatchUI(){
   box.classList.add('open');box.querySelector('.m2Shade').onclick=()=>closeSheet(box);box.querySelector('.m2Close').onclick=()=>closeSheet(box);
   let play=box.querySelector('.m2Play');if(play)play.onclick=()=>{closeSheet(box);hplay(play.dataset.u)};
  };
- if(!targetMode)document.querySelectorAll('.m2Match [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(allVisible().find(c=>c.uid===el.dataset.u))};el.oncontextmenu=e=>e.preventDefault()});
+ if(!targetMode){
+  document.querySelectorAll('.m2HandCard[data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();hplay(el.dataset.u)};el.oncontextmenu=e=>e.preventDefault()});
+  document.querySelectorAll('.m2DuelCard[data-u],.m2Tile[data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(allVisible().find(c=>c.uid===el.dataset.u))};el.oncontextmenu=e=>e.preventDefault()});
+ }
  document.querySelectorAll('[data-openbench]').forEach(btn=>btn.onclick=()=>{
   let own=btn.dataset.openbench==='h',win=own?S.hw:S.aw,lose=own?S.hl:S.al,o=own?'h':'a',box=document.querySelector('#m2BenchSheet');
   box.innerHTML=`<div class=m2Shade></div><div class="m2PanelSheet m2BenchPanel"><div class=m2Grab></div><div class=m2PanelHead><div><small>ZONES DE JEU</small><b>${own?'TON BENCH':'BENCH RIVAL'}</b></div><button class=m2Close>✕</button></div><div class=m2ZoneBlock><h3>✓ WINZONE <span>${win.length}</span></h3><div class=m2ZoneGrid>${win.length?win.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div><div class=m2ZoneBlock><h3>✕ LOSEZONE <span>${lose.length}</span></h3><div class=m2ZoneGrid>${lose.length?lose.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div></div>`;
