@@ -900,37 +900,54 @@ function renderCollection(){
 function mobileMatchUI(){
  const portrait=matchMedia('(orientation:portrait) and (pointer:coarse) and (max-width:700px)').matches;
  if(!portrait)return false;
- const tile=(c,o,zone='')=>{
-  if(!c)return '<div class="mEmpty">—</div>';
-  if(c.down)return `<div class="mTile mDown" data-u="${c.uid}"><b>ODDBALL</b><span>FACE CACHÉE</span></div>`;
+ const allVisible=()=>[...S.h,...S.hw,...S.hl,...S.aw,...S.al,...(S.hf?[S.hf]:[]),...(S.af?[S.af]:[])];
+ const tile=(c,o)=>{
+  if(!c)return '';
+  if(c.down)return `<button class="m2Tile m2Down" data-u="${c.uid}"><b>ODDBALL</b><span>FACE CACHÉE</span></button>`;
   let d=dyn(c,o,'bench'),cl=c.color==='WILD'?'WILD':c.color;
-  return `<div class="mTile ${cl}" data-u="${c.uid}"><div class=mTileName>${c.name}</div><div class=mTileStars>${'★'.repeat(c.stars||0)||'—'}</div><div class=mTileStats><span>POW <b>${d.p}</b></span><span>SPD <b>${d.s}</b></span></div></div>`;
+  return `<button class="m2Tile ${cl}" data-u="${c.uid}"><strong>${c.name}</strong><em>${'★'.repeat(c.stars||0)||'0★'}</em><span>POW <b>${d.p}</b> · SPD <b>${d.s}</b></span></button>`;
  };
- const zone=(label,cards,o)=>`<section class=mZone><div class=mZoneHead>${label}<b>${cards.length}</b></div><div class=mZoneCards>${cards.length?cards.map(c=>tile(c,o)).join(''):'<div class=mZoneEmpty>VIDE</div>'}</div></section>`;
- const duel=(c,o,label)=>c?`<div class=mDuel data-u="${c.uid}">${card(c,false,false,'faceoff')}</div>`:`<div class=mDuelEmpty>${label}</div>`;
- app.innerHTML=`<div class="mMatch">
-   <header class=mMatchTop><button id=mMenu>☰</button><div><b>ODDBALL</b><span>${S.ball==='h'?'● TA BALLE':'● BALLE RIVALE'}</span></div><div class=mScore><span>RIVAL <b>${S.as}</b></span><i>—</i><span>TOI <b>${S.hs}</b></span></div><button id=mFeed>≡</button></header>
-   <div class=mOpponent><div class=mSideTitle><b>RIVAL</b><span>MAIN · ${S.a.length}</span></div><div class=mZones>${zone('✓ WINZONE',S.aw,'a')}${zone('✕ LOSEZONE',S.al,'a')}</div></div>
-   <div class=mFaceoff><div class=mFaceTitle>FACE-OFF ${faceoffDemandBanner()}</div><div class=mDuelRow>${duel(S.af,'a','RIVAL')}<div class=mVs>${S.phase==='end'?(S.hs>S.as?'WIN':S.hs<S.as?'LOSE':'DRAW'):(S.phase==='scoring'?'SCORE':'VS')}</div>${duel(S.hf,'h','TOI')}</div></div>
-   <div class=mHuman><div class=mSideTitle><b>TON BENCH</b><span>PIOCHE ${S.deck.length} · DÉFAUSSE ${S.disc?.length||0}</span></div><div class=mZones>${zone('✕ LOSEZONE',S.hl,'h')}${zone('✓ WINZONE',S.hw,'h')}</div></div>
-   <div class=mHandWrap><div class=mHandHead><b>TA MAIN</b><span>${S.h.length} CARTE${S.h.length>1?'S':''} · TOUCHE POUR VOIR</span></div><div class=mHand id=myhand>${S.h.map(c=>card(c,false,false,'hand')).join('')}</div></div>
-   <div id=mPreview class=mPreview></div>
-   <div id=mFeedPanel class=mFeedPanel><div class=mFeedHead><b>FIL DU MATCH</b><button id=mFeedClose>✕</button></div><div class=mFeedRows>${(S.log||[]).slice().reverse().map(x=>`<p>${x}</p>`).join('')||'<p>Aucune interaction.</p>'}</div></div>
-   <div id=visualFx class=visualFx></div>${targetPrompt()}${finalPanel()}<div id=eventToast class=eventToast></div>
+ const summary=(who,win,lose,o)=>`<button class="m2BenchSummary" data-openbench="${who}"><span><b>${who==='a'?'BENCH RIVAL':'TON BENCH'}</b><small>${win.length+lose.length} carte${win.length+lose.length!==1?'s':''}</small></span><span class=m2BenchCounts><i>✓ ${win.length}</i><i>✕ ${lose.length}</i></span><span class=m2Chev>›</span></button>`;
+ const duelCard=(c,o,label)=>c?`<div class=m2DuelCard data-u="${c.uid}">${card(c,false,false,'faceoff')}</div>`:`<div class=m2DuelEmpty>${label}</div>`;
+ const inFaceoff=!!(S.hf||S.af)||['scoring','end'].includes(S.phase);
+ const title=inFaceoff?'FACE-OFF':(S.ball==='h'?'À TOI DE JOUER':'TOUR RIVAL');
+ app.innerHTML=`<div class="m2Match">
+  <header class=m2Top><button id=mMenu>☰</button><div class=m2Brand><b>ODDBALL</b><span>${S.ball==='h'?'● TA BALLE':'● BALLE RIVALE'}</span></div><div class=m2Score><span>RIVAL <b>${S.as}</b></span><i>–</i><span>TOI <b>${S.hs}</b></span></div></header>
+  <main class=m2Stage>
+   <div class=m2StageHead><span>${title}</span><button id=mQuick>•••</button></div>
+   <div class=m2BenchStrip>${summary('a',S.aw,S.al,'a')}${summary('h',S.hw,S.hl,'h')}</div>
+   ${inFaceoff?`<section class=m2Face><div class=m2FaceLabel>FACE-OFF ${faceoffDemandBanner()}</div><div class=m2Duel>${duelCard(S.af,'a','RIVAL')}<div class=m2Vs>${S.phase==='end'?(S.hs>S.as?'FIN':S.hs<S.as?'FIN':'FIN'):(S.phase==='scoring'?'SCORE':'VS')}</div>${duelCard(S.hf,'h','TOI')}</div></section>`:`<section class=m2TurnHero><div class=m2Ball>${S.ball==='h'?'●':'○'}</div><h1>${S.ball==='h'?'CHOISIS TON ATHLÈTE':'LE RIVAL PRÉPARE SON ATTAQUE'}</h1><p>${S.ball==='h'?'Touche une carte pour la lire puis la jouer.':'Ta main reste prête pendant que le rival joue.'}</p></section>`}
+  </main>
+  <section class=m2HandArea><div class=m2HandHead><b>TA MAIN</b><span>${S.h.length} CARTE${S.h.length!==1?'S':''}</span></div><div class=m2Hand id=myhand>${S.h.map(c=>`<div class=m2HandCard data-u="${c.uid}">${card(c,false,false,'hand')}</div>`).join('')}</div></section>
+  <div id=m2Sheet class=m2Sheet></div><div id=m2BenchSheet class=m2Sheet></div><div id=m2QuickSheet class=m2Sheet></div>
+  <div id=visualFx class=visualFx></div>${targetPrompt()}${finalPanel()}<div id=eventToast class=eventToast></div>
  </div>`;
  document.querySelector('#mMenu').onclick=goMenu;
- const fp=document.querySelector('#mFeedPanel');document.querySelector('#mFeed').onclick=()=>fp.classList.add('open');document.querySelector('#mFeedClose').onclick=()=>fp.classList.remove('open');
  let en=document.querySelector('#endNew');if(en)en.onclick=S.leagueActive?(S.league?.current?.playoff?leagueFinishPlayoffMatch:leagueFinishPlayedMatch):startDraft;let sf=document.querySelector('#skipFinal');if(sf)sf.onclick=skipFinal;
  bindTargetMode();setTimeout(playVisualQueue,20);setTimeout(flushCardFx,30);
- if(!targetMode){
-  const visible=[...S.h,...S.hw,...S.hl,...S.aw,...S.al,...(S.hf?[S.hf]:[]),...(S.af?[S.af]:[])];
-  const preview=c=>{
-   if(!c||c.down)return;let mine=S.h.some(x=>x.uid===c.uid);
-   let box=document.querySelector('#mPreview');box.innerHTML=`<div class=mPreviewShade></div><div class=mPreviewBox><button class=mPreviewClose>✕</button><div class=mPreviewCard>${card(c,false,false,'inspect')}</div><div class=mPreviewInfo><b>${c.name}</b><span>${abilityCategory(c)}${triggerLabel(c)?' · '+triggerLabel(c):''}</span></div>${mine?`<button class=mPlayCard data-u="${c.uid}">JOUER CETTE CARTE</button>`:''}</div>`;box.classList.add('open');
-   box.querySelector('.mPreviewClose').onclick=()=>box.classList.remove('open');box.querySelector('.mPreviewShade').onclick=()=>box.classList.remove('open');let play=box.querySelector('.mPlayCard');if(play)play.onclick=()=>{box.classList.remove('open');hplay(play.dataset.u)};
-  };
-  document.querySelectorAll('.mMatch [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(visible.find(c=>c.uid===el.dataset.u))};el.oncontextmenu=e=>e.preventDefault()});
- }
+ const closeSheet=box=>{box.classList.remove('open');box.innerHTML=''};
+ const preview=c=>{
+  if(!c||c.down)return;
+  let mine=S.h.some(x=>x.uid===c.uid),box=document.querySelector('#m2Sheet');
+  box.innerHTML=`<div class=m2Shade></div><div class=m2CardSheet><div class=m2Grab></div><button class=m2Close>✕</button><div class=m2Inspect>${card(c,false,false,'inspect')}</div><div class=m2CardMeta><b>${c.name}</b><span>${abilityCategory(c)}${triggerLabel(c)?' · '+triggerLabel(c):''}</span></div>${mine?`<button class=m2Play data-u="${c.uid}">JOUER CETTE CARTE</button>`:''}</div>`;
+  box.classList.add('open');box.querySelector('.m2Shade').onclick=()=>closeSheet(box);box.querySelector('.m2Close').onclick=()=>closeSheet(box);
+  let play=box.querySelector('.m2Play');if(play)play.onclick=()=>{closeSheet(box);hplay(play.dataset.u)};
+ };
+ if(!targetMode)document.querySelectorAll('.m2Match [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(allVisible().find(c=>c.uid===el.dataset.u)};el.oncontextmenu=e=>e.preventDefault()});
+ document.querySelectorAll('[data-openbench]').forEach(btn=>btn.onclick=()=>{
+  let own=btn.dataset.openbench==='h',win=own?S.hw:S.aw,lose=own?S.hl:S.al,o=own?'h':'a',box=document.querySelector('#m2BenchSheet');
+  box.innerHTML=`<div class=m2Shade></div><div class="m2PanelSheet m2BenchPanel"><div class=m2Grab></div><div class=m2PanelHead><div><small>ZONES DE JEU</small><b>${own?'TON BENCH':'BENCH RIVAL'}</b></div><button class=m2Close>✕</button></div><div class=m2ZoneBlock><h3>✓ WINZONE <span>${win.length}</span></h3><div class=m2ZoneGrid>${win.length?win.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div><div class=m2ZoneBlock><h3>✕ LOSEZONE <span>${lose.length}</span></h3><div class=m2ZoneGrid>${lose.length?lose.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div></div>`;
+  box.classList.add('open');box.querySelector('.m2Shade').onclick=()=>closeSheet(box);box.querySelector('.m2Close').onclick=()=>closeSheet(box);
+  box.querySelectorAll('[data-u]').forEach(el=>el.onclick=()=>preview(allVisible().find(c=>c.uid===el.dataset.u)));
+ });
+ document.querySelector('#mQuick').onclick=()=>{
+  let box=document.querySelector('#m2QuickSheet');
+  box.innerHTML=`<div class=m2Shade></div><div class="m2PanelSheet m2QuickPanel"><div class=m2Grab></div><div class=m2PanelHead><b>PARTIE</b><button class=m2Close>✕</button></div><button id=m2Zones>ZONES DE JEU <span>›</span></button><button id=m2Feed>HISTORIQUE DU MATCH <span>›</span></button><div class=m2DeckInfo><span>PIOCHE <b>${S.deck.length}</b></span><span>DÉFAUSSE <b>${S.disc?.length||0}</b></span></div><button class=m2Danger id=m2End>FORCER LA FIN</button></div>`;
+  box.classList.add('open');box.querySelector('.m2Shade').onclick=()=>closeSheet(box);box.querySelector('.m2Close').onclick=()=>closeSheet(box);
+  box.querySelector('#m2Zones').onclick=()=>{closeSheet(box);document.querySelector('[data-openbench="h"]').click()};
+  box.querySelector('#m2Feed').onclick=()=>{box.querySelector('.m2PanelSheet').innerHTML=`<div class=m2Grab></div><div class=m2PanelHead><b>HISTORIQUE</b><button class=m2Close>✕</button></div><div class=m2FeedRows>${(S.log||[]).slice().reverse().map(x=>`<p>${x}</p>`).join('')||'<p>Aucune interaction.</p>'}</div>`;box.querySelector('.m2Close').onclick=()=>closeSheet(box)};
+  box.querySelector('#m2End').onclick=()=>{closeSheet(box);end()};
+ };
  return true;
 }
 function render(){if(S.phase==='menu'){renderMenu();return}if(S.phase==='leagueStart'){renderLeagueStart();return}if(S.phase==='leagueDraft'){renderLeagueDraft();return}if(S.phase==='leagueHub'){renderLeagueHub();return}if(S.phase==='leagueRosters'){renderLeagueRosters();return}if(S.phase==='leagueStandings'){renderLeagueStandings();return}if(S.phase==='leagueCalendar'){renderLeagueCalendar();return}if(S.phase==='leagueRoster'){renderLeagueRoster();return}if(S.phase==='leaguePrep'){renderLeaguePrep();return}if(S.phase==='leagueResults'){renderLeagueResults();return}if(S.phase==='leagueRecruit'){renderLeagueRecruit();return}if(S.phase==='leagueSeasonEnd'){renderLeagueSeasonEnd();return}if(S.phase==='leaguePlayoffs'){renderLeaguePlayoffs();return}if(S.phase==='leaguePlayoffPrep'){renderLeaguePlayoffPrep();return}if(S.phase==='leaguePlayoffResult'){renderLeaguePlayoffResult();return}if(S.phase==='leagueChampion'){renderLeagueChampion();return}if(S.phase==='stats'){renderStats();return}if(S.phase==='collection'){renderCollection();return}if(S.phase==='lab'){renderLab();return}if(S.phase==='d1'||S.phase==='d2'){let pending=S.phase==='d2'?S.pool.filter(c=>S.sel.has(c.uid)):[],draftHand=[...S.h,...pending];app.innerHTML=`<div class="shell draftShell"><div class=top><div class=logo>ODDBALL</div><div class=tag>Digital v1.45 · PLAYOFF UX</div></div><div class="panel draftPanel"><h2>${S.phase==='d1'?'Choisis 1 carte':'Choisis 2 cartes reçues'}</h2><p>Draft ${S.round+1}/2 · ${S.h.length} carte${S.h.length>1?'s':''} confirmée${S.h.length>1?'s':''}${pending.length?` · ${pending.length} sélectionnée${pending.length>1?'s':''} en attente`:''}</p><div class=choices>${S.pool.map(c=>card(c,false,S.sel.has(c.uid))).join('')}</div>${S.phase==='d2'?'<br><button class=btn id=ok>Confirmer</button>':''}</div><div class=draftHandDock><div class=draftHandTitle>TA MAIN · SYNERGIES <span>${draftHand.length}/6</span></div><div class=draftHand>${draftHand.length?draftHand.map(c=>`<div class="draftHandCard ${pending.includes(c)?'pendingPick':''}">${card(c)}</div>`).join(''):'<div class=draftHandEmpty>Tes cartes choisies apparaîtront ici au fur et à mesure.</div>'}</div></div></div>`;document.querySelectorAll('.choices .card').forEach(e=>e.onclick=()=>S.phase==='d1'?pick1(e.dataset.u):pick2(e.dataset.u));if(document.querySelector('#ok'))document.querySelector('#ok').onclick=conf;return}
