@@ -1906,3 +1906,30 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
   .tabletop .card{touch-action:manipulation}
   .humanHandRow .hand{touch-action:pan-x}
 }
+
+
+/* ===== v1.70 — EXPLICIT MOBILE CARD COMPONENTS ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+ .card.mobile-hand{width:138px!important;min-width:138px!important;height:198px!important;padding:6px!important;grid-template-rows:38px 48px 1fr!important}
+ .card.mobile-hand .name{font-size:12px!important}.card.mobile-hand .stats{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;height:48px!important;gap:4px!important;padding:0!important}
+ .card.mobile-hand .stats span{height:48px!important;padding:3px 5px!important}.card.mobile-hand .stats small{font-size:7px!important}.card.mobile-hand .stats b{font-size:21px!important}
+ .card.mobile-hand .ability{display:flex!important}.card.mobile-hand .abilityText{font-size:8px!important;line-height:1.12!important}
+
+ .card.mobile-faceoff{width:110px!important;min-width:110px!important;height:156px!important;padding:5px!important;grid-template-rows:30px 40px 1fr!important}
+ .card.mobile-faceoff .name{font-size:9px!important}.card.mobile-faceoff .stats{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;height:40px!important;gap:3px!important;padding:0!important}
+ .card.mobile-faceoff .stats span{height:40px!important;padding:2px 3px!important}.card.mobile-faceoff .stats small{font-size:5px!important}.card.mobile-faceoff .stats b{font-size:18px!important}
+ .card.mobile-faceoff .ability{display:flex!important}.card.mobile-faceoff .abilityText{font-size:6px!important;line-height:1.08!important}
+
+ .card.mobile-bench{width:46px!important;min-width:46px!important;height:64px!important;padding:2px!important;grid-template-rows:16px 24px 1fr!important;overflow:hidden!important}
+ .card.mobile-bench .impl,.card.mobile-bench .ability{display:none!important}.card.mobile-bench .name{font-size:5px!important;line-height:1!important;margin:0!important;padding:2px!important}
+ .card.mobile-bench .stars{font-size:4px!important}.card.mobile-bench .stats{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;width:100%!important;height:24px!important;gap:1px!important;padding:0!important;margin:0!important}
+ .card.mobile-bench .stats span{height:24px!important;min-width:0!important;padding:0 1px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
+ .card.mobile-bench .stats small{font-size:3px!important}.card.mobile-bench .stats b,.card.mobile-bench .stats span.stat3 b{font-size:7px!important;line-height:1!important;letter-spacing:-.5px!important}
+
+ .card.mobile-inspect{width:220px!important;min-width:220px!important;height:314px!important;padding:9px!important;grid-template-rows:56px 70px 1fr!important}
+ .card.mobile-inspect .name{font-size:18px!important}.card.mobile-inspect .stats{position:static!important;display:grid!important;grid-template-columns:1fr 1fr!important;height:70px!important;gap:6px!important;padding:0!important}
+ .card.mobile-inspect .stats span{height:70px!important;padding:5px 7px!important}.card.mobile-inspect .stats small{font-size:9px!important}.card.mobile-inspect .stats b{font-size:32px!important}
+ .card.mobile-inspect .ability{display:flex!important}.card.mobile-inspect .timing{font-size:9px!important}.card.mobile-inspect .abilityText{font-size:13px!important;line-height:1.18!important}
+
+ .tabletop .card,.tabletop .card *{-webkit-user-select:none!important;user-select:none!important;-webkit-touch-callout:none!important}
+}
