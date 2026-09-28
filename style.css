@@ -1953,3 +1953,28 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
  .mPreview{display:none;position:fixed;inset:0;z-index:9500}.mPreview.open{display:block}.mPreviewShade{position:absolute;inset:0;background:#020609dd}.mPreviewBox{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(310px,90vw);padding:14px;border:1px solid #476474;border-radius:16px;background:#09141d;display:flex;flex-direction:column;align-items:center;gap:9px}.mPreviewClose{position:absolute;right:9px;top:9px;width:34px;height:34px;border:0;border-radius:50%;background:#172b37;color:#fff;z-index:2}.mPreviewCard{height:314px}.mPreviewInfo{width:100%;display:flex;justify-content:space-between;align-items:center}.mPreviewInfo b{font-size:14px}.mPreviewInfo span{font-size:8px;color:#8fa4af}.mPlayCard{width:100%;min-height:48px;border:0;border-radius:10px;background:#f5bc2d;color:#081018;font-size:13px;font-weight:1000}
  .mMatch .targetPrompt{z-index:9700}
 }
+
+
+/* ===== v1.72 — MOBILE COMPACT COURT ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+ .mMatch{
+   grid-template-rows:52px 82px 142px 82px minmax(260px,1fr)!important;
+ }
+ .mOpponent,.mHuman{padding:3px 8px!important;overflow:hidden!important}
+ .mSideTitle{height:16px!important}
+ .mZones{height:61px!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:5px!important;width:100%!important}
+ .mZone{width:100%!important;min-width:0!important;max-width:100%!important}
+ .mZoneHead{height:16px!important;padding:2px 5px!important}
+ .mZoneCards{height:43px!important;padding:1px 3px!important}
+ .mTile{flex:0 0 37px!important;width:37px!important;height:39px!important;padding:2px!important;grid-template-rows:10px 8px 1fr!important;border-width:1px!important}
+ .mTileName{font-size:4.5px!important}.mTileStars{font-size:5px!important}.mTileStats b{font-size:7px!important}
+ .mFaceoff{padding:3px 8px!important;overflow:hidden!important}
+ .mFaceTitle{height:18px!important;font-size:10px!important}
+ .mDuelRow{height:116px!important;grid-template-columns:94px 36px 94px!important;gap:4px!important}
+ .mDuel{width:110px!important;height:156px!important;transform:scale(.68)!important}
+ .mDuelEmpty{width:82px!important;height:104px!important}
+ .mVs{width:34px!important;height:34px!important}
+ .mHandWrap{padding-top:4px!important;overflow:hidden!important}
+ .mHandHead{height:22px!important}
+ .mHand{height:calc(100% - 22px)!important;padding-top:2px!important;padding-bottom:10px!important}
+}
