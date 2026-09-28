@@ -32,14 +32,14 @@ Purpose: validate the Claude foundation against the rules and edge cases already
 | Face-down Winzone = 1 star | PASS | Mina override also handled. |
 | Opponent already has 0 cards before a new attack | PASS | canContinue() ends the game before another Face-Off. |
 | Attacker effect empties defender hand before defense | PASS | faceOff() checks defender hand after attack resolution and awards auto-win. |
-| Same-player simultaneous effects: player chooses order | GAP | Claude trigger() currently resolves active Permanents in Bench order. V1 provisional rule says the player chooses the order. |
-| SPD snapshot after POW result | LATENT | Claude recalculates stats after Win/Lose before SPD. V1 rule says later discard/replacement must not retroactively alter the already snapshotted SPD comparison. Current card set may expose this only rarely, but V2 should encode the rule explicitly. |
+| Same-player simultaneous effects: player chooses order | PASS (V2 fix) | trigger() now asks the owning player to choose the next simultaneous Permanent; active state is re-checked after every resolution. Regression test added. |
+| SPD snapshot after POW result | PASS (V2 fix) | SPD is now snapshotted at POW resolution and WIN/LOSE cannot retroactively rewrite possession. Synthetic regression test added. |
 | Sora/Eli pair definition | PROVISIONAL | Claude uses disjoint pairs. Needs author confirmation. |
 | Samir/Tessa mirror suppression | PROVISIONAL | Claude chooses both-disabled. Needs author confirmation. |
 | Aya normal Face-Off placement counts as zone move | PROVISIONAL | Claude says no. Needs author confirmation. |
 | Wally cross-player swap ownership | PROVISIONAL | Claude changes ownership. Needs author confirmation. |
 
-## Torture scenarios to automate next
+## Torture scenarios\n\nImplemented in local V2 foundation: simultaneous-effect ordering and explicit SPD snapshot regression. Full suite now: **43 targeted engine tests + 500 AI-vs-AI matches, 0 failures/errors**.\n\n## Torture scenarios to automate next
 
 1. Flip a Permanent source during a trigger chain and prove later queued contribution disappears.
 2. Native Wild vs dynamically Wild vs Bea Collins anti-Wild, while checking printed-color abilities.
