@@ -933,7 +933,7 @@ function mobileMatchUI(){
   box.classList.add('open');box.querySelector('.m2Shade').onclick=()=>closeSheet(box);box.querySelector('.m2Close').onclick=()=>closeSheet(box);
   let play=box.querySelector('.m2Play');if(play)play.onclick=()=>{closeSheet(box);hplay(play.dataset.u)};
  };
- if(!targetMode)document.querySelectorAll('.m2Match [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(allVisible().find(c=>c.uid===el.dataset.u)};el.oncontextmenu=e=>e.preventDefault()});
+ if(!targetMode)document.querySelectorAll('.m2Match [data-u]').forEach(el=>{el.onclick=e=>{e.stopPropagation();preview(allVisible().find(c=>c.uid===el.dataset.u))};el.oncontextmenu=e=>e.preventDefault()});
  document.querySelectorAll('[data-openbench]').forEach(btn=>btn.onclick=()=>{
   let own=btn.dataset.openbench==='h',win=own?S.hw:S.aw,lose=own?S.hl:S.al,o=own?'h':'a',box=document.querySelector('#m2BenchSheet');
   box.innerHTML=`<div class=m2Shade></div><div class="m2PanelSheet m2BenchPanel"><div class=m2Grab></div><div class=m2PanelHead><div><small>ZONES DE JEU</small><b>${own?'TON BENCH':'BENCH RIVAL'}</b></div><button class=m2Close>✕</button></div><div class=m2ZoneBlock><h3>✓ WINZONE <span>${win.length}</span></h3><div class=m2ZoneGrid>${win.length?win.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div><div class=m2ZoneBlock><h3>✕ LOSEZONE <span>${lose.length}</span></h3><div class=m2ZoneGrid>${lose.length?lose.map(c=>tile(c,o)).join(''):'<p>VIDE</p>'}</div></div></div>`;
