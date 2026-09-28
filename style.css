@@ -2008,3 +2008,27 @@ html,body{min-height:100%;overscroll-behavior:none}body{-webkit-tap-highlight-co
  .m2QuickPanel>button:not(.m2Close){width:100%;height:52px;margin:5px 0;border:1px solid #294553;border-radius:11px;background:#10212c;color:#fff;text-align:left;padding:0 15px;font-size:11px;font-weight:900;display:flex;justify-content:space-between;align-items:center}.m2QuickPanel .m2Danger{border-color:#7c2a37!important;background:#3b1119!important;color:#ff8792!important}.m2DeckInfo{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}.m2DeckInfo span{padding:12px;border-radius:10px;background:#061018;font-size:8px;color:#80949e}.m2DeckInfo b{display:block;font-size:20px;color:#fff}.m2FeedRows{max-height:65dvh;overflow-y:auto}.m2FeedRows p{font-size:10px;line-height:1.35;padding:8px 2px;margin:0;border-bottom:1px solid #1e323d}
  .m2Match .targetPrompt{z-index:9900}
 }
+
+
+/* ===== v1.74 — MOBILE FLOW: persistent benches + direct play + motion ===== */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:700px){
+ .m2Match{grid-template-rows:62px minmax(0,1fr) 340px}
+ .m2LiveBenches{display:flex;flex-direction:column;gap:5px;margin:3px 0 5px}
+ .m2LiveRow{display:grid;grid-template-columns:31px 1fr 1fr;gap:5px;align-items:center}
+ .m2LiveRow>b{font-size:7px;writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:1px;color:#8da1ab}
+ .m2LiveRow>button{height:55px;min-width:0;position:relative;border:1px solid #294552;border-radius:9px;background:#08141c;color:#fff;padding:3px 5px;text-align:left;overflow:hidden}
+ .m2LiveRow>button>span{position:absolute;top:3px;left:5px;font-size:6px;font-weight:900;color:#91a6af}
+ .m2LiveRow>button>i{position:absolute;top:3px;right:5px;font-size:7px;font-style:normal;color:#f6c32d}
+ .m2LiveRow>button>div{height:39px;margin-top:9px;display:flex;align-items:end;gap:3px;overflow:hidden}
+ .m2LiveRow>button small{font-size:6px;color:#425762;margin:auto}
+ .m2LiveRow .m2Tile{flex:0 0 31px!important;width:31px!important;height:38px!important;border-width:1px!important;border-radius:4px!important;padding:2px!important;pointer-events:none}
+ .m2LiveRow .m2Tile strong{font-size:3.8px!important}.m2LiveRow .m2Tile em{font-size:5px!important;margin:1px 0!important}.m2LiveRow .m2Tile span{font-size:2.7px!important}.m2LiveRow .m2Tile span b{font-size:5px!important}
+ .m2TurnHero{padding:2px 0 0}.m2Ball{width:58px;height:58px;font-size:25px;margin-bottom:8px}.m2TurnHero h1{font-size:18px}.m2TurnHero p{font-size:9px}
+ .m2Face{animation:m2FaceIn .3s ease-out}.m2DuelCard .card{animation:m2CardPop .38s cubic-bezier(.2,.8,.2,1)}
+ .m2HandCard{transition:transform .16s ease,filter .16s ease}.m2HandCard:active{transform:translateY(-12px) scale(1.025);filter:brightness(1.12)}
+ .m2HandCard .card{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+ .m2Match .eventToast{z-index:9700!important;pointer-events:none!important}
+ .m2Match .cardActionFx{z-index:20!important}
+ @keyframes m2FaceIn{from{opacity:.25;transform:scale(.96)}to{opacity:1;transform:none}}
+ @keyframes m2CardPop{0%{opacity:.2;transform:translateY(30px) scale(.86)}70%{transform:translateY(-4px) scale(1.025)}100%{opacity:1;transform:none}}
+}
