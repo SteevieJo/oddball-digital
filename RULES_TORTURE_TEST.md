@@ -39,20 +39,20 @@ Purpose: validate the Claude foundation against the rules and edge cases already
 | Aya normal Face-Off placement counts as zone move | PROVISIONAL | Claude says no. Needs author confirmation. |
 | Wally cross-player swap ownership | PROVISIONAL | Claude changes ownership. Needs author confirmation. |
 
-## Torture scenarios\n\nImplemented in local V2 foundation: simultaneous-effect ordering and explicit SPD snapshot regression. Full suite now: **43 targeted engine tests + 500 AI-vs-AI matches, 0 failures/errors**.\n\n## Torture scenarios to automate next
+## Torture scenarios\n\nImplemented in local V2 foundation: simultaneous-effect ordering, explicit SPD snapshot regression, disappearing queued Permanent source, Bea native/dynamic Wild suppression, Ravi/Omar/June/Mika Flip-chain ordering, Bench orientation retention/hand reset, and Kira face-up reaction. Full suite now: **49 targeted engine tests + 500 AI-vs-AI matches, 0 failures/errors**.\n\n## Torture scenarios to automate next
 
-1. Flip a Permanent source during a trigger chain and prove later queued contribution disappears.
-2. Native Wild vs dynamically Wild vs Bea Collins anti-Wild, while checking printed-color abilities.
+1. ~~Flip a Permanent source during a trigger chain and prove later queued contribution disappears.~~ — DONE.
+2. ~~Native Wild vs dynamically Wild vs Bea Collins anti-Wild, while checking printed-color abilities.~~ — DONE.
 3. Asta replacement into Play + Attack chain, including requested color and final placement.
 4. Defender loses on mismatch but still executes Play/Defense and resulting draws/discards.
 5. Attacker removes defender's last card before defense; verify auto-win, Win effect, placement, then immediate end.
 6. Hattie flips an End Game card before scoring; verify text and printed stars are disabled before totals.
 7. Akira vs multiple End Game cards and opposing Akira; document ordering behavior.
-8. Omar + Ravi + June/Mika/Kira on the same hostile Flip.
+8. ~~Omar + Ravi + June/Mika on the same hostile Flip; Kira face-up reaction separately.~~ — DONE.
 9. Samir/Tessa suppression with a third Permanent in each affected zone.
 10. Explicit SPD snapshot regression test using a synthetic effect that mutates/replaces a current Face-Off card after POW but before SPD.
 11. Two simultaneous same-player reactive Permanents where order changes the result; require a player decision instead of Bench-order resolution.
-12. Zone movement retaining face orientation, then return-to-hand forcing face-up.
+12. ~~Zone movement retaining face orientation, then return-to-hand forcing face-up.~~ — DONE.
 
 ## Gate for V2 visual work
 
